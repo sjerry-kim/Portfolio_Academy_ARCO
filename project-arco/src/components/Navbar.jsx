@@ -4,6 +4,8 @@ import Donation from "../page/Donation";
 import Home from "../page/Home";
 import SafeCenter from "../page/SafeCenter";
 import Login from "../page/Login";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faShieldDog } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
   const activeStyle = {color: "#e64a19"}
@@ -13,6 +15,7 @@ const Navbar = () => {
       <div className="glb-title">
         <Link to='/' element={<Home />}
         style={{ textDecoration: 'none', fontSize: '1.5em', fontWeight: 'bold' , color: '#000051'}}>
+          <FontAwesomeIcon icon={faShieldDog} style={{color: "#000051", marginRight:"7px" }}/>
           ARCO
         </Link>
       </div>
