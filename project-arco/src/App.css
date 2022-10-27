@@ -39,6 +39,10 @@
 
 /* 여기서부터*/
 
+body{
+  background-color: #ffffff;
+}
+
 .glb-header{
   display: flex;
   justify-content: space-around;
@@ -46,7 +50,24 @@
   width: 100%;
   height: 100px;
   position: fixed;
-  background-color: #fffff7;
+  background-color: #ffffff;
+}
+
+.glb-title{
+  width: 15%;
+  margin-left: 5%;
+}
+
+.glb-title a{
+  padding-left: 0;
+}
+
+.glb-nav{
+  width :70%;
+}
+
+.glb-login{
+  width: 15%;
 }
 
 .home-body{
@@ -56,13 +77,58 @@
   background-size:cover;
   background-attachment: fixed;
   background-position: center;
+  margin-left: 100px;
+}
+
+.big-title-capital{
+  position: fixed;
+  top: 110px;
+  left: 20px;
+  width: 70px;
+  height: 210px;
+  padding-top: 10px;
+  margin-left: 18px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.big-title-capital h1{
+  margin: 0 0 0 0 ;
+  padding: 0px 0px 0px 0px;
+  height: 65px;
+  font-size: 3.5em;
+  color: #000051;
+}
+
+.big-title-small{
+  position: fixed;
+  top: 110px;
+  left: 20px;
+  width: 400px;
+  height: 210px;
+  padding-top: 12px;
+  margin-left: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+}
+
+.big-title-small h1{
+  margin: 0 0 0 15px ;
+  padding: 12px 0px 0px 0px;
+  height: 65px;
+  font-size: 2.5em;
+  color: #ffffff;
 }
 
 .home-main{
   width: 75%;
   height: 2000px;
-  background-color: #fffff7;
+  background-color: #ffffff;
   position: absolute; top: 1000px;
+  margin-left: -100px;
+  z-index: 500;
 }
 
 /*
@@ -80,24 +146,25 @@
 }
 */
 
-#delete{
-  display: none;
-}
-
 .side-header{
   width: 25%;
-  height: 970px;
+  height: 100%;
   position: fixed; 
   top: 0px;
   right: 0px;
   background: url(./img/main_nav_m3.jpg);
   background-size: cover;
   background-attachment: fixed;
-  background-position: top;
-  display: flex;
+  background-position: top right;
+  display: none;
   flex-direction: column;
   justify-content: space-between;
-  animation: fadein 2s;
+  animation: fadein 1s;
+  z-index: 501;
+}
+
+.delete{
+  display: none;
 }
 
 @keyframes fadein{
@@ -105,7 +172,29 @@
   to{ opacity: 1;}
 }
 
-.side-header .side-title{
-  margin: 50px 190px 0 0px;
-  font-size: 2.4em;
+@keyframes fadeout{
+  from{ opacity: 1;}
+  to{ opacity: 0;}
+}
+
+.side-title{
+  width: 100%;
+  height: 15%;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  margin: 15% 0 0 10%;
+  font-size: 2em;
+}
+
+.side-nav{
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.2em;
+}
+
+.side-login{
+  height: 15%;
 }

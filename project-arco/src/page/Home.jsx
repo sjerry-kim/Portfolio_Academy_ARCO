@@ -30,30 +30,53 @@ const Home = () => {
         let percentage = (curreY/totalY)*100;
         
         if (percentage>=40){
-          document.querySelector("#delete").style.display = "flex";
+          document.querySelector(".side-header").style.display = "flex";
+          document.querySelector(".side-header").style.animation = "fadein 2s";
         }else{
-          document.querySelector("#delete").style.display = "none";
+          document.querySelector(".side-header").style.animation = "fadeout 2s";
+          document.querySelector(".side-header").style.display = "none";
         }
       }
 
 
   return (
     <body className="home-body">
-      <main className="home-main">
-      </main>
-      <div className="side-header" id="delete" >
+      <div className="big-title-capital">
+        <h1>A</h1>
+        <h1>R</h1>
+        <h1>C</h1>
+        <h1>O</h1>
+      </div>
+      <div className="big-title-small">
+        <h1>n i m a l</h1>
+        <h1>i g t s</h1>
+        <h1>o e x i t e n c e</h1>
+        <h1>r g a n i z a t i o n</h1>
+      </div>
+      <div className="side-header delete" >
         <div className="side-title">
-          <NavLink to='/' element={<Home />}>ARCO</NavLink>
+          <NavLink to='/' element={<Home />}
+          style={{ textDecoration: 'none' , fontWeight: 'bold', color: '#e64a19'}}>ARCO</NavLink>
         </div>
         <nav className="side-nav">
-          <NavLink to='/about' element={<About />}>About Us</NavLink>
-          <NavLink to='/donation' element={<Donation />}>Donation</NavLink>
-          <NavLink to='/safecenter' element={<SafeCenter />}>Safe Center</NavLink>
+          <NavLink to='/about' element={<About />}
+          style={{ textDecoration: 'none' , margin: '8px', color: '#ffffff'}}
+          >About Us</NavLink>
+          <NavLink to='/donation' element={<Donation />}
+          style={{ textDecoration: 'none' , margin: '8px', color: '#ffffff'}}
+          >Donation</NavLink>
+          <NavLink to='/safecenter' element={<SafeCenter />}
+          style={{ textDecoration: 'none' , margin: '8px', color: '#ffffff'}}
+          >Safe Center</NavLink>
         </nav>
         <div className="side-login">
-          <NavLink to='/login' element={<Login />}>Sign In</NavLink>
+          <NavLink to='/login' element={<Login />}
+          style={{ textDecoration: 'none', color: '#ffffff'}}
+          >Sign In</NavLink>
         </div>
       </div>
+      <main className="home-main">
+      </main>
     </body>
   );
 }
