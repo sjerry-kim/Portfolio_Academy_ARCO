@@ -1,5 +1,7 @@
 import './App.css';
 import {Routes, Route, Link, NavLink} from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import "slick-carousel/slick/slick-theme.css";
 import Layout from './page/Layout';
 import Home from './page/Home';
 import About from './page/About';

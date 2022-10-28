@@ -4,6 +4,9 @@ import About from "./About";
 import Donation from "./Donation";
 import Login from "./Login";
 import SafeCenter from "./SafeCenter";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faDove } from "@fortawesome/free-solid-svg-icons";
+import Lastest from "../components/Lastest";
 
 const Home = () => {
 
@@ -42,12 +45,18 @@ const Home = () => {
   return (
     <body className="home-body">
       <div className="box">
-      <div className="big-title">
-        <h1><span>A</span> n i m a l</h1>
-        <h1><span>R</span> i g t s</h1>
-        <h1><span>C</span> o e x i t e n c e</h1>
-        <h1><span>O</span> r g a n i z a t i o n</h1>
-      </div>
+        <div className="big-title">
+          <h1><span>A</span> n i m a l</h1>
+          <h1><span>R</span> i g t s</h1>
+          <h1><span>C</span> o e x i t e n c e</h1>
+          <h1><span>O</span> r g a n i z a t i o n</h1>
+        </div>
+        <div className="box-link">
+          <a href="/">
+            <FontAwesomeIcon icon={faDove} style={{paddingRight:"7px"}}/>
+            Click & Check the news !
+          </a>
+        </div>
       </div>
       <div className="side-header delete" >
         <div className="side-title">
@@ -78,6 +87,7 @@ const Home = () => {
         </div>
       </div>
       <main className="home-main">
+        <Lastest />
       </main>
     </body>
   );

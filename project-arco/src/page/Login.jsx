@@ -1,7 +1,10 @@
 const Login = () => {
   return (
-    <div>
-    </div>
+    <body>
+      <div className="login-background">
+
+      </div>
+    </body>
   );
 }
 

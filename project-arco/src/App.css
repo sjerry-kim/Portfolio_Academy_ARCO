@@ -39,7 +39,7 @@
 
 /* 여기서부터*/
 
-body{
+.home-body{
   width: 100%;
   height: 3000px;
   background: url(./img/main_img.jpg);
@@ -112,6 +112,28 @@ body{
   color: #000051;
 }
 
+.box-link{
+  width: auto;
+  height: auto;
+  position: fixed;
+  top: 80%;
+  left: 200px;
+  color: black;
+  list-style: none;
+}
+
+.box-link a {
+  font-size: 1.1em;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 100px;
+}
+
+.box-link a:hover{
+  color: #000051;
+  text-shadow: 0px 0px 3px lemonchiffon ;
+}
+
 /*
 .big-title-small{
   position: fixed;
@@ -137,10 +159,10 @@ body{
 
 .home-main{
   width: 75%;
-  height: 2000px;
+  height: 2100px;
   background-color: #ffffff;
   position: absolute; top: 1000px; left: 0;
-  margin-left: 0px;
+  padding-top: 100px;
   z-index: 500;
 }
 
@@ -210,4 +232,39 @@ body{
 
 .side-login{
   height: 15%;
+}
+
+/*About*/
+.about-background{
+  width: 100%;
+  height: 1000px;
+  background-color: #ffffff;
+  position: absolute; top: 100px; left: 0;
+  z-index: 501;
+}
+
+/*Donation*/
+.donation-background{
+  width: 100%;
+  height: 1000px;
+  background-color: #ffffff;
+  position: absolute; top: 100px; left: 0;
+  z-index: 501;
+  
+}
+
+/*Safe Center*/
+.safecenter-background{
+  width: 100%;
+  height: 1000px;
+  background-color: #ffffff;
+  position: absolute; top: 100px; left: 0;
+  z-index: 501;
+}
+
+/*Login*/
+.login-background{
+  width: 100%;
+  height: 1000px;
+  background-color: #ffffff;
 }
