@@ -4,7 +4,7 @@ import Donation from "../page/Donation";
 import Home from "../page/Home";
 import SafeCenter from "../page/SafeCenter";
 import Login from "../page/Login";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShieldDog } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
