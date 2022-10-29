@@ -39,15 +39,6 @@
 
 /* 여기서부터*/
 
-.home-body{
-  width: 100%;
-  height: 3000px;
-  background: url(./img/main_img.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: top left;
-}
-
 .glb-header{
   display: flex;
   justify-content: space-around;
@@ -78,7 +69,18 @@
   width: 15%;
 }
 
-.box{
+/* Home */
+
+.home-body{
+  width: 100%;
+  height: 3000px;
+  background: url(./img/main_img.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top left;
+}
+
+.big-box{
   width: 100px;
   height: 100%;
   background-color: #ffffff;
@@ -106,6 +108,7 @@
   height: 65px;
   font-size: 3.2em;
   color: #ffffff;
+  font-weight: bold;
 }
 
 .big-title span{
@@ -234,6 +237,45 @@
   height: 15%;
 }
 
+.donation-box{
+  height: 230px;
+  background-color: #e27f22;
+  padding: 40px;
+}
+
+.quiz-box{
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  height: 400px;
+  margin-top: 100px;
+  background-color: lightgray;
+  padding: 50px;
+}
+
+.quiz-radio-box{
+  padding: 50px;
+}
+
+.quiz-box button{
+  width: 140px;
+  height: 90px;
+  padding: 0;
+  margin-left: 95%;
+  font-size: 1.3em;
+}
+
+.footer{
+  background-color: #000051;
+  width: 100%;
+  height: 300px;
+  position: absolute; bottom: 0;
+}
+
+.footer p{
+  color: #ffffff;
+}
+
 /*About*/
 .about-background{
   width: 100%;
@@ -265,6 +307,30 @@
 /*Login*/
 .login-background{
   width: 100%;
-  height: 1000px;
+  height: 100%;
   background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+
+/*Mypage*/
+.mypage-background{
+  width: 100%;
+  height: 100%;
+  background-color: pink;
+}
+
+.mypage-box{
+  display: flex;
+  flex-direction: row;
+}
+
+.mypage-nav{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  width: 20%;
+  height: 100%;
+  background-color: #b7ceb7;
 }

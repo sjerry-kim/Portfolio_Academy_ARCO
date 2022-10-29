@@ -31,8 +31,8 @@ const Navbar = () => {
         >Safe Center</NavLink>
       </nav>
       <div className="glb-login">
-        <NavLink to='/login' element={<Login />}
-        style={{ textDecoration: 'none' , fontWeight: 'bold', color: '#000051'}}>Sign In</NavLink>
+        <Link to='/login' element={<Login />}
+        style={{ textDecoration: 'none', color: '#000051', fontSize:"0.8em"}}>My Page</Link>
       </div>
     </div>
   );

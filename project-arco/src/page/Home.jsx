@@ -7,6 +7,10 @@ import SafeCenter from "./SafeCenter";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDove } from "@fortawesome/free-solid-svg-icons";
 import Lastest from "../components/Lastest";
+import DonationBox from "../components/DonationBox";
+import Quiz from "../components/Quiz";
+import LookFamily from "../components/LookFamily";
+import Footer from "../components/Footer";
 
 const Home = () => {
 
@@ -44,7 +48,7 @@ const Home = () => {
 
   return (
     <body className="home-body">
-      <div className="box">
+      <div className="big-box">
         <div className="big-title">
           <h1><span>A</span> n i m a l</h1>
           <h1><span>R</span> i g t s</h1>
@@ -88,6 +92,10 @@ const Home = () => {
       </div>
       <main className="home-main">
         <Lastest />
+        <DonationBox />
+        <Quiz />
+        <LookFamily />
+        <Footer />
       </main>
     </body>
   );
