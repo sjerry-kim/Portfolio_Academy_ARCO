@@ -20,7 +20,7 @@ const MyPage = () => {
             <NavLink to='/mypage/mydonation' element={<MyDonation />}>My Donation</NavLink>
             <NavLink to='/mypage/questions' element={<Questions />}>Questions</NavLink>
           </nav>
-          <div style={{width:"80%", position:"absolute", right:"0", height:"100%", backgroundColor:"#b7ceb7"}}> 
+          <div style={{width:"80%", position:"absolute", right:"0", height:"100%", backgroundColor:"#b7c5b6"}}> 
             <section style={{width:"90%", height:"90%", position:"fixed", top:"15%", 
                               backgroundColor:"lightgray"}}>
               <Outlet />

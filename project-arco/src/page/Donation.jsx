@@ -1,9 +1,12 @@
 import { useEffect } from "react";
+import Footer from "../components/Footer";
+import * as React from 'react';
+import Pie from "../components/Pie";
+
 
 const Donation = () => {
 
   // 마운트 시 가장 윗쪽 화면이 보이게 하기
-
   useEffect(()=>{
     window.addEventListener("scroll",function(){
       // glb-header가 있다면 실행할 수 있도록
@@ -18,7 +21,8 @@ const Donation = () => {
   return (
     <body>
       <div className="donation-background">
-
+      <Pie />
+      <Footer />
       </div>
     </body>
   );

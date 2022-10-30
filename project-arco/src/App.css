@@ -112,7 +112,7 @@
 }
 
 .big-title span{
-  color: #000051;
+  color: #2C3D4F;
 }
 
 .box-link{
@@ -133,7 +133,7 @@
 }
 
 .box-link a:hover{
-  color: #000051;
+  color: #2C3D4F;
   text-shadow: 0px 0px 3px lemonchiffon ;
 }
 
@@ -266,7 +266,7 @@
 }
 
 .footer{
-  background-color: #000051;
+  background-color: #2C3D4F;
   width: 100%;
   height: 300px;
   position: absolute; bottom: 0;
@@ -279,7 +279,7 @@
 /*About*/
 .about-background{
   width: 100%;
-  height: 1000px;
+  height: 5000px;
   background-color: #ffffff;
   position: absolute; top: 100px; left: 0;
   z-index: 501;
@@ -288,8 +288,11 @@
 /*Donation*/
 .donation-background{
   width: 100%;
-  height: 1000px;
-  background-color: #ffffff;
+  height: 2100px;
+  background: url(./img/wolf.jpg);
+  background-size: cover;
+  background-attachment:scroll;
+  background-position: top;
   position: absolute; top: 100px; left: 0;
   z-index: 501;
   
@@ -298,8 +301,11 @@
 /*Safe Center*/
 .safecenter-background{
   width: 100%;
-  height: 1000px;
-  background-color: #ffffff;
+  height: 2000px;
+  background: url(./img/running_dog.jpg);
+  background-size:auto;
+  background-attachment:scroll;
+  background-position: top;
   position: absolute; top: 100px; left: 0;
   z-index: 501;
 }
@@ -332,5 +338,5 @@
   position: absolute;
   width: 20%;
   height: 100%;
-  background-color: #b7ceb7;
+  background-color: #b7c5b6;
 }

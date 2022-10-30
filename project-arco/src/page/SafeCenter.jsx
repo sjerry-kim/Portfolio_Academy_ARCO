@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import Footer from "../components/Footer";
 
 const SafeCenter = () => {
 
@@ -18,7 +19,7 @@ const SafeCenter = () => {
   return (
     <body>
       <div className="safecenter-background">
-
+        <Footer />
       </div>
     </body>
   );
