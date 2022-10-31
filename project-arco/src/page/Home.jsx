@@ -1,5 +1,5 @@
-import { useEffect } from "react";
-import { NavLink } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { NavLink, useNavigate } from "react-router-dom";
 import About from "./About";
 import Donation from "./Donation";
 import Login from "./Login";
@@ -11,8 +11,18 @@ import DonationBox from "../components/DonationBox";
 import Quiz from "../components/Quiz";
 import LookFamily from "../components/LookFamily";
 import Footer from "../components/Footer";
+import { useContext } from "react";
+import DataContext from "../context/DataContext";
 
 const Home = () => {
+
+  const [login, setLogin] = useState(false);
+  const data = useContext(DataContext);
+  const navigate = useNavigate();
+
+  useEffect(()=>{
+    setLogin(data.state.user? true :false)
+  },[data.state.user])
 
   useEffect(()=>{
     window.addEventListener("scroll",function(){
@@ -44,6 +54,20 @@ const Home = () => {
           document.querySelector(".side-header").style.display = "none";
         }
       }
+
+  const checkLogin = () =>{
+    data.state.user? (
+      navigate('/mypage')
+    ):(
+      navigate('/login')
+    )
+  }
+
+  const checkLogout = ()=>{
+    setLogin(false);
+    data.action.setUser(null); // 🤬🤬🤬
+    navigate('/'); // 🤬🤬🤬
+  }
 
 
   return (
@@ -84,10 +108,26 @@ const Home = () => {
           </NavLink>
         </nav>
         <div className="side-login">
-          <NavLink to='/login' element={<Login />}
-          style={{ textDecoration: 'none', color: '#ffffff'}}>
+          {
+            login? (
+              <div>
+                <button onClick={()=>{navigate('/mypage')}}>
+                  My Page
+                </button>
+                <button
+                  style={{ textDecoration: 'none', color: '#2C3D4F'}}
+                  onClick={checkLogout}>
+                  Sign Out
+                </button>
+              </div>
+            ):(
+              <button
+          style={{ textDecoration: 'none', color: '#ffffff'}}
+          onClick={checkLogin}>
             Sign In
-          </NavLink>
+          </button>
+            )
+          }
         </div>
       </div>
       <main className="home-main">

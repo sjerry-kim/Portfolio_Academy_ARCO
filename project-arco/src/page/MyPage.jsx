@@ -3,8 +3,17 @@ import MyDonation from "../components/MyDonation";
 import MyProfile from "../components/MyProfile";
 import Questions from "../components/Questions";
 import Home from "./Home";
+import { useContext, useEffect, useState } from "react";
+import DataContext from "../context/DataContext";
 
 const MyPage = () => {
+  const [login, setLogin] = useState(true);
+  const data = useContext(DataContext);
+
+  useEffect(()=>{
+    setLogin(data.state.user? true :false)
+  },[data.state.user])
+
   return (
     <div>
       <div className="mypage-background">
