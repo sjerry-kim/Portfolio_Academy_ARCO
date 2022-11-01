@@ -16,7 +16,10 @@ const Login = () => {
     action.setUser({
       userId: id,
       userPassword: pw,
-      userProfile: null,
+      userProfile: "",
+      userDonation: true,
+      userBank: "",
+      userAccount:""
     });
     navigate('/mypage');
   }
