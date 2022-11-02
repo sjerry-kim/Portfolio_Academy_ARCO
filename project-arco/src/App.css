@@ -319,7 +319,7 @@
   justify-content: center;
 }
 
-/*Mypage*/
+/*Mypage : myprofile*/
 .profile-greet{
   text-align: start;
   padding: 20px 0 0 30px;
@@ -370,4 +370,46 @@
 .profileInfo-box{
   margin: 50px;
   padding-top: 10px;
+}
+
+/*Mypage : questions*/
+.counselor-box{
+  display: flex;
+
+}
+
+.counselor-profile{
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 2px 2px;
+  margin: 20px 8px 20px 15px;
+  border-radius: 50%;
+  color: white;
+  background-color: darkgreen;
+}
+
+.counselor-p{
+  width:fit-content;
+  height: 30px;
+  text-align: center;
+  padding: 2px 20px;
+  margin: 20px 15px 20px 0;
+  background-color: ivory;
+  border-radius: 20px;
+}
+
+.user-box{
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px 25px 20px 0;
+}
+
+.user-p{
+  width:fit-content;
+  height: 30px;
+  text-align: center;
+  padding: 2px 20px;
+  background-color: lightcyan;
+  border-radius: 20px;
 }

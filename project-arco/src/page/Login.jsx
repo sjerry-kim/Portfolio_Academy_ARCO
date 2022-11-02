@@ -19,7 +19,10 @@ const Login = () => {
       userProfile: "",
       userDonation: true,
       userBank: "",
-      userAccount:""
+      userAccount:"",
+      userQuestions:[
+        {text: "i wonder when i can get a donation reciept..."},
+      ]
     });
     navigate('/mypage');
   }
