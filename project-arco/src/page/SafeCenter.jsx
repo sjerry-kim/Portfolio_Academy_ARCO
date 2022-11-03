@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import Footer from "../components/Footer";
+import SubmitVolunteerwork from "../components/SubmitVolunteerwork";
 
 const SafeCenter = () => {
 
@@ -19,7 +20,9 @@ const SafeCenter = () => {
   return (
     <body>
       <div className="safecenter-background">
+        <h1>Safe Center</h1>
         <Footer />
+        <SubmitVolunteerwork />
       </div>
     </body>
   );

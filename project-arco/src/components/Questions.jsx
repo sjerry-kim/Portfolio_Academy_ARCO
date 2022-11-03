@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useEffect } from "react";
 import { useContext } from "react";
 import DataContext from "../context/DataContext";
 import QuestionTextarea from "./QuestionTextarea";
@@ -6,6 +7,10 @@ import QuestionTextarea from "./QuestionTextarea";
 const Questions = () => {
   const {state, action} = useContext(DataContext);
   const [questions, setQuestions] = useState()
+
+  useEffect(()=>{
+    console.log(state.user.userQuestions)
+  })
 
   return ( 
     <div style={{width: "100%", height: "82%", display: "flex", flexDirection: "column", justifyContent:"space-between"}}>

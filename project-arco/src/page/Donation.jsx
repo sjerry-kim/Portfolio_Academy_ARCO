@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import Footer from "../components/Footer";
 import * as React from 'react';
 import Pie from "../components/Pie";
+import SubmitDonation from "../components/SubmitDonation";
 
 
 const Donation = () => {
@@ -22,6 +23,7 @@ const Donation = () => {
     <body>
       <div className="donation-background">
       <Pie />
+      <SubmitDonation />
       <Footer />
       </div>
     </body>

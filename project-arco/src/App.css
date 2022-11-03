@@ -289,7 +289,7 @@
 .donation-background{
   width: 100%;
   height: 2100px;
-  background: url(./img/wolf.jpg);
+  background-color: palegoldenrod;
   background-size: cover;
   background-attachment:scroll;
   background-position: top;
