@@ -17,25 +17,22 @@ const MyPage = () => {
   return (
     <div>
       <div className="mypage-background">
-        <div style={{width:"100px", height:"10px", position:"fixed",
-                      top: "5px", right:"10px", zIndex: "600"}}>
-          <Link to='/' element={<Home/>} style={{textDecoration:"none", color: "#000051"}}> 
-            ARCO Home
-          </Link>
-        </div>
-        <div className="mypage-box">
-          <nav className="mypage-nav">
-            <NavLink index to='/mypage' element={<MyProfile />}>My profile</NavLink>
-            <NavLink to='/mypage/mydonation' element={<MyDonation />}>My Donation</NavLink>
-            <NavLink to='/mypage/questions' element={<Questions />}>Questions</NavLink>
-          </nav>
-          <div style={{width:"80%", position:"absolute", right:"0", height:"15%", backgroundColor:"#b7c5b6"}}> 
-            <section style={{width:"80%", height:"85%", position:"fixed", top:"15%", 
-                              backgroundColor:"lightgray"}}>
-              <Outlet style={{backgroundColor: "lightgray"}} />
-            </section>
-          </div>
-        </div>
+        <Link to='/' element={<Home/>} 
+              style={{height:"10px", width:"100px", margin:"0", textDecoration:"none", 
+              color: "#000051", backgroundColor: "transparent", 
+              position: "fixed", top: "10px", right: "10px"}}> 
+          ARCO Home
+        </Link>
+        <nav className="mypage-nav">
+          <NavLink index to='/mypage' element={<MyProfile />}>My profile</NavLink>
+          <NavLink to='/mypage/mydonation' element={<MyDonation />}>My Donation</NavLink>
+          <NavLink to='/mypage/questions' element={<Questions />}>Questions</NavLink>
+        </nav>
+        <section style={{width:"80%", height:"85%", position:"fixed", bottom:"0", right:"0",
+                          backgroundColor:"lightgray", display:"flex", flexDirection:"row",
+                          justifyContent:"space-between", padding:"0"}}>
+          <Outlet />
+        </section> 
       </div>
     </div>
   );

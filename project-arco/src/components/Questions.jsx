@@ -13,7 +13,9 @@ const Questions = () => {
   })
 
   return ( 
-    <div style={{width: "100%", height: "82%", display: "flex", flexDirection: "column", justifyContent:"space-between"}}>
+    <div style={{width:"100%", display:"flex", 
+                  flexDirection:"column"}}>
+      <div>
         <div className="QnA-box" style={{width: "100%", height:"100%", overflowY:"auto"}}>
           <div className="counselor-box">
             <div className="counselor-profile">C</div>
@@ -21,7 +23,6 @@ const Questions = () => {
               <p>Please wait 2-3 days for the answers :)</p>
             </div>
           </div>
-
           {
             state.user.userQuestions.map((q,index)=>(
               <div key={index} className="user-box">
@@ -33,6 +34,7 @@ const Questions = () => {
           }
         </div>
         <QuestionTextarea />
+      </div>
     </div>
   );
 }

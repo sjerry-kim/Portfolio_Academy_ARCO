@@ -23,15 +23,14 @@ function QuestionTextarea() {
   return (
     <div>
       <Form onSubmit={sendQuestions}
-        style={{width: "100%", height: "15%", display: "flex",  position:"fixed", bottom:"0"}}>
-        <Form.Group controlId="exampleForm.ControlTextarea1" style={{width: "70%", height:"100%"}}>
+        style={{ display: "flex",  flexDirection: "row", justifyContent: "space-between"}}>
+        <Form.Group controlId="exampleForm.ControlTextarea1">
           <Form.Control as="textarea" className='question-text'
             onChange={(e)=>{setQuestions(e.target.value)}}
             placeholder='Send your qusestions.' 
             rows={3} style={{height:"100%"}}/>
         </Form.Group>
-        <Button variant="secondary" type="submit"
-          style={{ width: "10%", height:"15%", position:"fixed", bottom:"0", right:"9px"}}>
+        <Button variant="secondary" type="submit">
           Send
         </Button>
       </Form>
