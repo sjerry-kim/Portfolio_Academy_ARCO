@@ -25,7 +25,7 @@ const About = () => {
         <h1>Arco will take the lead in making a better world <br />
             that coexists with animals.</h1>
         <Act />
-      <Footer />
+        <Footer />
       </div>
     </body>
   );

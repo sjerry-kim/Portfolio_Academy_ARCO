@@ -12,7 +12,7 @@ const MyDonation = () => {
     },[data.state.user])
 
   return ( 
-    <div>
+    <div style={{width:"100%"}}>
       {
         data.state.user.userDonation? (
           <MyDonationKeep />

@@ -28,6 +28,9 @@ function App() {
           <Route path='/' element={<Layout />}>
             <Route index element={<Home />}/>
             <Route path='/about' element={<About />}/>
+              <Route path='/about/donation_volunteerwork' />
+              <Route path='/about/publishing_newsletter' />
+              <Route path='/about/matching_family' />
             <Route path='/donation' element={<Donation />}/>
             <Route path='/safecenter' element={<SafeCenter />}/>
             <Route path='/login' element={<Login />}/>

@@ -5,7 +5,7 @@ const DonationBox = () => {
     <div>
       <section className="donation-box">
         <h1>We need your help!</h1>
-        <Link to='/donation'>
+        <Link to='/donation' onClick="window.scrollTo(0,0);">
           Donation to ARCO
         </Link>
       </section>

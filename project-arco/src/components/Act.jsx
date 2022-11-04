@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import { useNavigate } from "react-router-dom";
 
 const Act = () => {
   const settings = {
@@ -14,32 +15,40 @@ const Act = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
+    cssEase: "linear",
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
   };
 
   const actCards =[
     { title: "Publishing newsletter",
-      img : "homeless_4.jpg"},
+      img : "homeless_4.jpg",
+      url : "/about/publishing_newsletter"},
     { title: "Matching new Family",
-      img : "matchingFamily.jpg"},
+      img : "matchingFamily.jpg",
+      url : "/about/matching_family"},
     { title: "Safe Center",
-      img : "safeCenter.jpg"},
+      img : "safeCenter.jpg",
+      url : "/safecenter"},
     { title: "Donation & Volunteer Work",
-      img : "whale_img.jpg"},
+      img : "whale_img.jpg",
+      url: "/about/donation_volunteerwork"},
   ]
+
+  const navigate= useNavigate();
   
   return (
     <div>
-      <Container>
+      <Container style={{margin:"auto", display:"flex", justifyContent:"center"}}>
         <Row style={{width: "100%"}}>
-          <Col style={{width: "50%"}} className="px-3">
+          <Col>
             <Slider {...settings}>
               {
                 actCards.map((cards, index)=>(
-                  <div key={index} >
-                    <img src={require(`../img/${cards.img}`)} style={{width:"100%", height:"500px"}} />
-                    <h2 style={{width:"6%", color: "#ffffff" ,position: "fixed", bottom:"5%"}}>{cards.title}</h2>
+                  <div key={index}>
+                    <img src={require(`../img/${cards.img}`)} onClick={()=>{navigate(cards.url)}}
+                        style={{width:"100%", height:"500px", objectFit:"cover", objectPosition:"center"}} />
+                    <h2 style={{width:"8%", fontSize:"1.7em", color: "#ffffff" ,position: "fixed", bottom:"3%", textAlign:"left", marginLeft:"10px"}}>{cards.title}</h2>
                   </div>
                 ))
               }

@@ -94,15 +94,15 @@ const Home = () => {
           </NavLink>
         </div>
         <nav className="side-nav">
-          <NavLink to='/about' element={<About />}
+          <NavLink to='/about' element={<About />} onClick="window.scrollTo(0,0);"
           style={{ textDecoration: 'none' , margin: '8px', color: '#ffffff'}}>
             About Us
           </NavLink>
-          <NavLink to='/donation' element={<Donation />}
+          <NavLink to='/donation' element={<Donation />} onClick="window.scrollTo(0,0);"
           style={{ textDecoration: 'none' , margin: '8px', color: '#ffffff'}}>
             Donation
           </NavLink>
-          <NavLink to='/safecenter' element={<SafeCenter />}
+          <NavLink to='/safecenter' element={<SafeCenter />} onClick="window.scrollTo(0,0);"
           style={{ textDecoration: 'none' , margin: '8px', color: '#ffffff'}}>
             Safe Center
           </NavLink>

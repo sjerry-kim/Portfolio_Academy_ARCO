@@ -2,20 +2,17 @@ import { Col, Container, Row } from "react-bootstrap";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
 const Lastest = () => {
   const settings = {
-    dots: false,
+    dots: true,
     infinite: true,
-    speed: 500,
+    speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000,
-    nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />,
+    autoplaySpeed: 3500,
+    cssEase: "linear"
   };
   const lastestImage = [
     { img: "homeless_1.jpg" },
@@ -25,19 +22,23 @@ const Lastest = () => {
   
   return (
     <div>
-      <h2>Lastest</h2>
-        <Container >
-          <Row className="m-5">
-            <Col className="px-1">
+      <h2 style={{ marginBottom:" 50px", fontSize:"2.3em" }}>Abandoned Animals</h2>
+        <Container style={{ marginBottom:" 60px" }}>
+          <Row>
+            <Col>
               <Slider {...settings}>
                 {
                   lastestImage.map((img,index)=>(
-                    <div key={index}>
-                        <img style={{width: "600px", height: "400px", marginRight:"0", marginLeft:"5%"}} src={require(`../img/${img.img}`)}/>
+                    <div key={index} className="mb-4">
+                        <img style={{width: "1050px", height: "600px", margin:"auto", objectFit:"cover", objectPosition:" top center" }} src={require(`../img/${img.img}`)}/>
                     </div>
                   ))
                 }
               </Slider>
+              <div style={{width:"150px", height:"130px",
+                            display:"flex", backgroundColor:"darkgreen", position: "absolute", left:"5%" ,bottom:"66%"}}>
+                <p style={{ margin: "auto", fontSize:"1.8em", fontWeight:"bold", color:"white"}}>Divcover<br />more</p>
+              </div>
             </Col>
           </Row>
         </Container>
@@ -46,23 +47,3 @@ const Lastest = () => {
 }
 
 export default Lastest;
-
-function SampleNextArrow(props) {
-  const { className, style, onClick } = props;
-  return (
-    <FontAwesomeIcon icon={faChevronRight} 
-    className={className}
-    onClick={onClick}
-    style={{color: "gray", margin: "0"}}/>
-  );
-}
-
-function SamplePrevArrow(props) {
-  const { className, style, onClick } = props;
-  return (
-    <FontAwesomeIcon icon={faChevronLeft} 
-    className={className}
-    onClick={onClick}
-    style={{color: "gray",  margin: "0"}}/>
-  );
-}

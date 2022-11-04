@@ -21,8 +21,8 @@ const SafeCenter = () => {
     <body>
       <div className="safecenter-background">
         <h1>Safe Center</h1>
-        <Footer />
         <SubmitVolunteerwork />
+        <Footer />
       </div>
     </body>
   );
