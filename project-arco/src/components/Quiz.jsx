@@ -11,7 +11,7 @@ const Quiz = () => {
   const checkQuiz = ()=>{
 
     switch(correct){
-      case "50,000" :
+      case "100,000" :
         alert("Correct!")
         break;
       case "wrong" :
@@ -32,9 +32,9 @@ const Quiz = () => {
             <Form.Check type="radio" style={{width:"80px", display:"inline-block", marginRight: "40px"}} 
                         name="quiz" label={`10,000`} onClick={()=>{setCorrect("wrong")}}/>
             <Form.Check type="radio" style={{width:"80px", display:"inline-block", marginRight: "40px"}} 
-                        name="quiz" label={`50,000`} onClick={()=>{setCorrect("50,000")}}/>
+                        name="quiz" label={`50,000`} onClick={()=>{setCorrect("wrong")}}/>
             <Form.Check type="radio"  style={{width:"80px", display:"inline-block", marginRight: "40px"}} 
-                        name="quiz" label={`100,000`} onClick={()=>{setCorrect("wrong")}}/>
+                        name="quiz" label={`100,000`} onClick={()=>{setCorrect("100,000")}}/>
           </InputGroup>
         </div>
         <button onClick={()=>{checkQuiz()}}>Check</button>
