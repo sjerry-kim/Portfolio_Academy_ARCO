@@ -162,7 +162,7 @@
 
 .home-main{
   width: 75%;
-  height: 2500px;
+  height: 3000px;
   background-color: #ffffff;
   position: absolute; top: 1000px; left: 0;
   padding-top: 100px;
@@ -289,10 +289,10 @@
 .donation-background{
   width: 100%;
   height: 2100px;
-  background-color: palegoldenrod;
+  background-image: url(../src/img/penguins_img.jpg);
   background-size: cover;
-  background-attachment:scroll;
-  background-position: top;
+  background-attachment: scroll;
+  background-position: left;
   position: absolute; top: 100px; left: 0;
   z-index: 501;
   

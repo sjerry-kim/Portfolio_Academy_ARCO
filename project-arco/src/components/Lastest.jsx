@@ -7,12 +7,13 @@ const Lastest = () => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 1000,
+    speed: 700,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3500,
-    cssEase: "linear"
+    cssEase: "linear",
+    arrows: false,
   };
   const lastestImage = [
     { img: "homeless_1.jpg" },
@@ -47,3 +48,4 @@ const Lastest = () => {
 }
 
 export default Lastest;
+

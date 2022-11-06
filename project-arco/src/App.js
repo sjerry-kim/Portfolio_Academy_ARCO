@@ -19,6 +19,9 @@ import MyPage from './page/MyPage';
 import MyProfile from './components/MyProfile';
 import MyDonation from './components/MyDonation';
 import Questions from './components/Questions';
+import DonationVolunteer from './page/DonationVolunteer';
+import PublishingNewsletter from './page/PublishingNewsletter';
+import MatchingFamily from './page/MatchingFamily';
 
 function App() {
   return (
@@ -28,13 +31,13 @@ function App() {
           <Route path='/' element={<Layout />}>
             <Route index element={<Home />}/>
             <Route path='/about' element={<About />}/>
-              <Route path='/about/donation_volunteerwork' />
-              <Route path='/about/publishing_newsletter' />
-              <Route path='/about/matching_family' />
             <Route path='/donation' element={<Donation />}/>
             <Route path='/safecenter' element={<SafeCenter />}/>
             <Route path='/login' element={<Login />}/>
           </Route>
+          <Route path='/about/donation_volunteerwork' element={<DonationVolunteer />} />
+          <Route path='/about/publishing_newsletter'element={<PublishingNewsletter />}/>
+          <Route path='/about/matching_family' element={<MatchingFamily />}/>
           <Route path='/mypage' element={<MyPage />}>
             <Route index element={<MyProfile />} />
             <Route path='/mypage/mydonation' element={<MyDonation />} />
