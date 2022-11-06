@@ -14,7 +14,7 @@ const LookFamily = () => {
       <h1>We looking for new Family</h1>
       <CardGroup className='m-5'>
         {
-          state.animal.map((animal, index)=>(
+          state.animal.filter((exAnimal) => (exAnimal.expose === "yes")).map((animal, index)=>(
               <Card key={index}>
                 <Card.Img variant="top" src={require(`../img/${animal.img}`)}
                           style={{height:" 70%", objectFit:"cover"}}/>

@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { Card, CardGroup } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import SubmitAdoptionApp from "../components/SubmitAdoptionApp";
 import DataContext from "../context/DataContext";
 import Home from "./Home";
 
@@ -16,8 +17,8 @@ const MatchingFamily = () => {
             ARCO Home
           </Link>
         </div>
-        <div className="bottom">
-            <button>Adoption application</button>
+        <div className="bottom">  {/* ↓ 다시 고치기 */}
+            <button onClick={()=>{window.scrollTo(1500,1500)}} >Adoption application</button>
           <img src={require(`../img/${"cat_hand.jpg"}`)} alt="" style={{width:"600px", height:"400px", marginTop:"50px"}} />
         </div>
       </header>
@@ -37,6 +38,9 @@ const MatchingFamily = () => {
           ))
         }
       </CardGroup>
+      <div className="adoption-app">
+        <SubmitAdoptionApp />
+      </div>
     </div>
   );
 }

@@ -46,7 +46,7 @@ const Act = () => {
               {
                 actCards.map((cards, index)=>(
                   <div key={index}>
-                    <img src={require(`../img/${cards.img}`)} onClick={()=>{navigate(cards.url)}}
+                    <img src={require(`../img/${cards.img}`)} onClick={()=>{ navigate(cards.url); window.scrollTo(0,0)}} /* 보수 ! */
                         style={{width:"100%", height:"500px", objectFit:"cover", objectPosition:"center"}} />
                     <h2 style={{width:"8%", fontSize:"1.7em", color: "#ffffff" ,position: "fixed", bottom:"3%", textAlign:"left", marginLeft:"10px"}}>{cards.title}</h2>
                   </div>
