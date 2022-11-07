@@ -23,6 +23,19 @@ function SubmitAdoptionApp() {
     <Form style={{display: "flex", flexDirection: "column", alignItems: "center"}} 
       noValidate validated={validated} onSubmit={handleSubmit}>
       <Row className="mb-3" style={{width: "200px"}}>
+        <Form.Group as={Col}>
+          <Form.Label>Sort</Form.Label>
+          <Form.Select aria-label="Default select example">
+            <option value="1">Adoption</option>
+            <option value="2">Fostering</option>
+            <option value="3">Sponsoring</option>
+          </Form.Select>
+          <Form.Control.Feedback type="invalid">
+            Please provide a valid phone number.
+          </Form.Control.Feedback>
+        </Form.Group>
+      </Row>
+      <Row className="mb-3" style={{width: "200px"}}>
         <Form.Group as={Col} controlId="validationCustom01">
           <Form.Label>First name</Form.Label>
           <Form.Control
@@ -74,29 +87,6 @@ function SubmitAdoptionApp() {
             </Form.Group>
         </Row>
         {/* 여기서부터!!!!!!! */}
-        <Row className="m-3 mb-4" style={{width: "500px"}}>
-          <Form.Group as={Col} controlId="validationCustom05">
-              <Form.Label>Check the day (Duplicate selection available)</Form.Label>
-              <InputGroup style={{diplay:"flex", flexDirection: "row", justifyContent: "center"}}>
-                <Form.Check style={{width:"80px", display:"inline-block", marginRight: "20px"}} id={`sunday`} label={`Sunday`}/>
-                <Form.Check style={{width:"80px", display:"inline-block", marginRight: "20px"}} id={`monday`} label={`Monday`}/>
-                <Form.Check style={{width:"80px", display:"inline-block", marginRight: "20px"}} id={`tuesday`} label={`Tuesday`}/>
-                <Form.Check style={{width:"80px", display:"inline-block", marginRight: "20px"}} id={`wednesday`} label={`Wednesday`}/>
-                <Form.Check style={{width:"80px", display:"inline-block", marginRight: "20px"}} id={`thursday`} label={`Thursday`}/>
-                <Form.Check style={{width:"80px", display:"inline-block", marginRight: "20px"}} id={`friday`} label={`Friday`}/>
-                <Form.Check style={{width:"80px", display:"inline-block", marginRight: "20px"}} id={`saturday`} label={`Saturday`}/>
-              </InputGroup>
-            </Form.Group>
-        </Row>
-        <Row className="m-3 mb-4" style={{width: "500px"}}>
-          <Form.Group as={Col} controlId="validationCustom05">
-              <Form.Label>Check the day (Duplicate selection available)</Form.Label>
-              <InputGroup style={{diplay:"flex", flexDirection: "row", justifyContent: "center"}}>
-                <Form.Check style={{width:"80px", display:"inline-block", marginRight: "80px"}} id={`Morning`} label={`Morning `}/>
-                <Form.Check style={{width:"80px", display:"inline-block", marginRight: "0px"}} id={`Afternoon`} label={`Afternoon`}/>
-              </InputGroup>
-            </Form.Group>
-        </Row>
 
 
       <Form.Group className="mb-3">

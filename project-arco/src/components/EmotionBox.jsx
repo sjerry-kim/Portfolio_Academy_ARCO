@@ -1,4 +1,7 @@
 const EmotionBox = () => {
+
+  //const number = useSelector()
+
   return (
     <div className="emotion-box">
         <div className="happy-box">

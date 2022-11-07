@@ -18,7 +18,7 @@ const MatchingFamily = () => {
           </Link>
         </div>
         <div className="bottom">  {/* ↓ 다시 고치기 */}
-            <button onClick={()=>{window.scrollTo(1500,1500)}} >Adoption application</button>
+            <button onClick={()=>{window.scrollTo(1400,1400)}} >Adoption application</button>
           <img src={require(`../img/${"cat_hand.jpg"}`)} alt="" style={{width:"600px", height:"400px", marginTop:"50px"}} />
         </div>
       </header>
@@ -39,6 +39,7 @@ const MatchingFamily = () => {
         }
       </CardGroup>
       <div className="adoption-app">
+        <h1>Adoption Application</h1>
         <SubmitAdoptionApp />
       </div>
     </div>

@@ -16,7 +16,7 @@ function comment(state=initalState, action) {
             text : action.payload.text,
             year : state.date.getFullYear(),
             month : state.date.getMonth()+1,
-            date : state.date.getDate(),
+            date : state.date.getDate()
 
           }
           // 새로운 메모를 가지는 리스트
