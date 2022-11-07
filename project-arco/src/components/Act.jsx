@@ -32,7 +32,7 @@ const Act = () => {
       url : "/safecenter"},
     { title: "Donation & Volunteer Work",
       img : "whale_img.jpg",
-      url: "/about/donation_volunteerwork"},
+      url: "/donation"},
   ]
 
   const navigate= useNavigate();

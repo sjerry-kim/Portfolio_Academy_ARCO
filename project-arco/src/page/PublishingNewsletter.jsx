@@ -1,5 +1,7 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
+import CommentBox from "../components/CommentBox";
+import EmotionBox from "../components/EmotionBox";
 import Home from "./Home";
 
 const PublishingNewsletter = () => {
@@ -111,24 +113,8 @@ const PublishingNewsletter = () => {
             dui accumsan sit amet nulla facilisi morbi tempus iaculis. Ac turpis egestas maecenas 
             pharetra.
           </p>
-          <div className="emotion-box">
-            <div>
-            <p>0</p>
-            <button className="happy-face">🥰</button>
-            </div>
-            <div>
-            <p>0</p>
-            <button className="touching-face">🥺</button>
-            </div>
-            <div>
-            <p>0</p>
-            <button className="sad-face">😢</button>
-            </div>
-            <div>
-            <p>0</p>
-            <button className="angry-face">😡</button>
-            </div>
-          </div>
+          <EmotionBox />
+          <CommentBox />
           <div className="top-botton">
             <button onClick={()=>{window.scrollTo(0,0);}}>Top</button>
           </div>

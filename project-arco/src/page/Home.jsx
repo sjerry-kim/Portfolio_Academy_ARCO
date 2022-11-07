@@ -80,9 +80,9 @@ const Home = () => {
           <h1><span>O</span> r g a n i z a t i o n</h1>
         </div>
         <div className="box-link">
-          <a href="/">
+          <a href="/about/publishing_newsletter">
             <FontAwesomeIcon icon={faDove} style={{paddingRight:"7px"}}/>
-            Click & Check the news !
+            Click & Check the newsletter !
           </a>
         </div>
       </div>

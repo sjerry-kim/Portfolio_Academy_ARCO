@@ -9,6 +9,11 @@ const LookFamily = () => {
 
   const {state} = useContext(DataContext);
 
+  const moveMatchFamily = ()=>{
+    window.scrollTo(0,0);
+    navigate('/about/matching_family')
+  }
+
   return (
     <div>
       <h1>We looking for new Family</h1>
@@ -28,7 +33,7 @@ const LookFamily = () => {
           ))
         }
       </CardGroup>
-      <button onClick={()=>{navigate('/about/matching_family')}} >Learn more about <span>Matching New Family</span></button>
+      <button onClick={moveMatchFamily} >Learn more about <span>Matching New Family</span></button>
     </div>
   );
 }
