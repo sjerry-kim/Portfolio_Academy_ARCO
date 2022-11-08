@@ -36,22 +36,15 @@ const Navbar = () => {
   return (
     <div className="glb-header" >
       <div className="glb-title">
-        <Link to='/' element={<Home />}
-        style={{ textDecoration: 'none', fontSize: '1.5em', fontWeight: 'bold' , color: '#2C3D4F'}}>
-          <FontAwesomeIcon icon={faShieldDog} style={{color: "#2C3D4F", marginRight:"7px" }}/>
+        <Link to='/' element={<Home />}>
+          <FontAwesomeIcon icon={faShieldDog}/>
           ARCO
         </Link>
       </div>
       <nav className="glb-nav">
-        <NavLink to='/about' element={<About />}
-        style={{ textDecoration: 'none' , fontWeight: 'bold', paddingLeft: '5%' , paddingRight: '5%', color: '#2C3D4F'}} 
-        >About Us</NavLink>
-        <NavLink to='/donation' element={<Donation />}
-        style={{ textDecoration: 'none' , fontWeight: 'bold' , paddingLeft: '5%', paddingRight: '5%', color: '#2C3D4F' }}
-        >Donation</NavLink>
-        <NavLink to='/safecenter' element={<SafeCenter />}
-        style={{ textDecoration: 'none' , fontWeight: 'bold' , paddingLeft: '5%', paddingRight: '5%', color: '#2C3D4F' }}
-        >Safe Center</NavLink>
+        <NavLink to='/about' element={<About />}>About Us</NavLink>
+        <NavLink to='/donation' element={<Donation />}>Donation</NavLink>
+        <NavLink to='/safecenter' element={<SafeCenter />}>Safe Center</NavLink>
       </nav>
       <div className="glb-login">
           {

@@ -1,5 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
 .App {
   text-align: center;
+  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
 }
 
 .App-logo {
@@ -51,33 +56,61 @@
 }
 
 .glb-title{
-  width: 20%;
-  margin-left: 5%;
+  width: 200px;
+  margin-left: 40px;
   display: flex;
+  justify-content: center;
 }
 
 .glb-title a{
   padding-left: 0;
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #2C3D4F;
+}
+
+.glb-title a path{
+  color: #2C3D4F;
 }
 
 .glb-nav{
-  width :65%;
-  margin-right: 45%;
+  display: flex;
+  justify-content: start;
+  width :70%;
+}
+
+.glb-nav a{
+  text-decoration: none;
+  font-weight: bold; 
+  padding-left: 10px;
+  color: #2C3D4F;
+  margin-right: 50px;
 }
 
 .glb-login{
-  width: 15%;
+  width: 13%;
+  margin-right: 0;
+}
+
+.glb-login button{
+  border: none;
+  background-color: transparent;
+  color: #2C3D4F;
+  font-weight: 700px;
+  font-size: 0.8em;
+  margin-right: 10px;
 }
 
 /* Home */
 
 .home-body{
   width: 100%;
-  height: 3000px;
+  height: 3500px;
   background: url(./img/main_img.jpg);
   background-size: cover;
   background-attachment: fixed;
-  background-position: top left;
+  background-position: bottom center;
 }
 
 .big-box{
@@ -137,52 +170,14 @@
   text-shadow: 0px 0px 3px lemonchiffon ;
 }
 
-/*
-.big-title-small{
-  position: fixed;
-  top: 110px;
-  left: 20px;
-  width: 400px;
-  height: 210px;
-  padding-top: 12px;
-  margin-left: 70px;
-  display: flex;
-  flex-direction: column;
-  align-items:flex-start;
-}
-
-.big-title-small h1{
-  margin: 0 0 0 15px ;
-  padding: 12px 0px 0px 0px;
-  height: 65px;
-  font-size: 2.5em;
-  color: #ffffff;
-}
-*/
-
 .home-main{
   width: 75%;
-  height: 3000px;
+  height: 3500px;
   background-color: #ffffff;
   position: absolute; top: 1000px; left: 0;
   padding-top: 100px;
   z-index: 500;
 }
-
-/*
-.glb-login{
-  animation: fadeout 0s;
-}
-
-@keyframes fadeout {
-  from{
-    opacity: 1;
-  }
-  to{
-    opacity: 0;
-  }
-}
-*/
 
 .side-header{
   width: 25%;
@@ -237,10 +232,65 @@
   height: 15%;
 }
 
+.lastest-box{
+  width: 100%;
+  margin-bottom: 70px ;
+}
+
+.lastest-box h2{
+  margin: 40px auto;
+  font-size: 2.3em;
+  font-weight: bold;
+}
+
+.lastest-box img{
+  width: 90%;
+  height: 700px ;
+  margin: auto;
+  object-fit: cover; 
+  object-position: top center;
+}
+
+.lastest-box .discover-box{
+  width:150px;
+  height:130px;
+  display:flex;
+  background-color:darkgreen;
+  position: relative;
+  bottom: 60px;
+  left: 30px;
+}
+
+.lastest-box .discover-box a{
+  margin: auto;
+  font-size:  1.8em;
+  font-weight: bold;
+  text-decoration-line: none;
+}
+
+.lastest-box .discover-box:hover{
+  background-color: rgb(1, 66, 1);
+}
+
 .donation-box{
-  height: 230px;
+  height: 250px;
   background-color: #e27f22;
   padding: 40px;
+}
+
+.donation-box h1{
+  font-size: 1.8em;
+  margin: 15px 0 9px 0;
+  font-weight: 500;
+  color: white;
+}
+
+.donation-box a{
+  text-decoration: none;
+  font-size: 2.8em;
+  font-weight: bold;
+  color: #2C3D4F;
+  margin-bottom: 50px;
 }
 
 .quiz-box{
@@ -248,13 +298,36 @@
   flex-direction: column;
   width: 85%;
   height: 400px;
-  margin-top: 100px;
+  margin-top: 140px;
+  margin-bottom: 0px;
   background-color: lightgray;
   padding: 50px;
 }
 
+.quiz-box h1{
+  text-align: start;
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+.quiz-box h3{
+  margin-bottom: 30px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
 .quiz-radio-box{
-  padding: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 50px 0;
+}
+
+.quiz-radio-box .form-check{
+  width: 80px;
+  display: inline-block;
+  margin-right: 40px;
+  font-weight: 600;
 }
 
 .quiz-box button{
@@ -263,18 +336,167 @@
   padding: 0;
   margin-left: 95%;
   font-size: 1.3em;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  background-color: darkgreen;
 }
+
+.quiz-box button:hover{
+  background-color: rgb(1, 66, 1);
+}
+
+.lookfamily-box{
+  
+  padding-top: 120px;
+}
+
+.lookfamily-box h1{
+  color: rgb(1, 66, 1);
+  font-weight: bold;
+}
+
+.lookfamily-box button{
+  padding: 20px 50px;
+  font-size: 1.5em;
+  font-weight: 600;
+  border: none;
+  background-color: lemonchiffon;
+  color: #2C3D4F;
+  border-radius: 10px;
+  
+}
+
+/*여기서부터 ! 😅😅😅*/
 
 .footer{
   background-color: #2C3D4F;
   width: 100%;
-  height: 300px;
+  height: 200px;
   position: absolute; bottom: 0;
 }
 
 .footer p{
   color: #ffffff;
 }
+
+@media screen and (max-width: 1000px){
+  .glb-header{
+    z-index: 1000;
+  }
+
+  .home-body{
+    height: 3000px;
+  }
+
+  .home-main{
+    width: 100%;
+    z-index: 999;
+    height: 3000px;
+  }
+
+  .lastest-box img{
+    width: 800px;
+    height: 500px;
+    object-position: center;
+  }
+}
+
+@media screen and (max-width: 717px){
+  .glb-header{
+    z-index: 1000;
+  }
+
+  .glb-title{
+    margin-left: 7px;
+  }
+
+  .glb-title a{
+    font-size: 1.1em;
+  }
+
+  .glb-nav a{
+    font-size: 0.8em;
+    padding-left: 0px;
+    margin-right: 20px;
+  }
+
+  .glb-login{
+    width: 15%;
+  }
+
+  .glb-login button{
+    font-size: 0.5em;
+    margin-right: 0px;
+  }
+  
+  .big-title{
+    width: 330px;
+    height: 160px;
+    margin-left: 52px;
+  }
+
+  .big-title h1{
+    font-size: 2em;
+  }
+
+  .home-body{
+    height: 3000px;
+  }
+
+  .home-main{
+    width: 100%;
+    z-index: 999;
+    height: 3000px;
+    position: absolute; top: 0; left: 0;
+  }
+
+  .lastest-box img{
+    width: 500px;
+    height: 350px;
+    object-position: center;
+  }
+
+  .lastest-box .discover-box{
+    width: 100px;
+    height: 90px;
+    position: relative;
+    left: 15px;
+  }
+
+  .lastest-box .discover-box a{
+    font-size: 1em;
+  }
+
+  .quiz-box{
+    width: 100%;
+  }
+
+  .quiz-box h3{
+    text-align: start;
+  }
+
+  .quiz-radio-box{
+    justify-content: start;
+  }
+
+  .quiz-box button{
+    width: 100px;
+    margin-left: 75%;
+  }
+
+}
+
+@media screen and (max-width: 574px){
+  .home-main{
+    width: 100%;
+    z-index: 999;
+    height: 4500px;
+    position: absolute; top: 0; left: 0;
+  }
+}
+
+
 
 /*About*/
 .about-background{

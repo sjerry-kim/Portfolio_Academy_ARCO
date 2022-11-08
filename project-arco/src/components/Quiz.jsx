@@ -25,17 +25,15 @@ const Quiz = () => {
   return (
     <div>
       <section className="quiz-box">
-        <h1 style={{textAlign:"start", marginBottom:"25px"}}>Quiz</h1>
-        <h3 style={{marginBottom:"30px"}}>how many animals are abondoned in a year?</h3>
+        <h1>Quiz</h1>
+        <h3>how many animals are abondoned in a year?</h3>
         <div className="quiz-radio-box">
-          <InputGroup style={{diplay:"flex", flexDirection: "row", justifyContent: "center"}}>
-            <Form.Check type="radio" style={{width:"80px", display:"inline-block", marginRight: "40px"}} 
+            <Form.Check type="radio" 
                         name="quiz" label={`10,000`} onClick={()=>{setCorrect("wrong")}}/>
-            <Form.Check type="radio" style={{width:"80px", display:"inline-block", marginRight: "40px"}} 
+            <Form.Check type="radio" 
                         name="quiz" label={`50,000`} onClick={()=>{setCorrect("wrong")}}/>
-            <Form.Check type="radio"  style={{width:"80px", display:"inline-block", marginRight: "40px"}} 
+            <Form.Check type="radio" 
                         name="quiz" label={`100,000`} onClick={()=>{setCorrect("100,000")}}/>
-          </InputGroup>
         </div>
         <button onClick={()=>{checkQuiz()}}>Check</button>
       </section>

@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { addmemo } from "../modules/comment";
 
 const CommentBox = () => {
-    const memolist = useSelector((state)=>state.memolist);
+    const memolist = useSelector((state)=>state.comment.memolist);
     
     const [name, setName] = useState("");
     const [text, setText] = useState("");

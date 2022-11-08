@@ -1,15 +1,23 @@
 const initialState = {
-  number : 0,
+  happy : 0,
+  sad: 0,
+  angry :0
 }
 
-export const increase = () => ({type:"increment"})
+export const increaseHappy = () => ({type:"happyIncre"});
+export const increaseSad = () => ({type:"sadIncre"});
+export const increaseAngry = () => ({type:"angryIncre"});
 
 // 리듀서 작성
 function emotionBox(state=initialState, action) {
   switch(action.type) {
-    case "increment" :
-      return {...state, number : state.number + 1}
-      default:
+    case "happyIncre" :
+      return {...state, happy : state.happy + 1}
+    case "sadIncre" :
+      return {...state, sad : state.sad + 1}
+    case "angryIncre" :
+      return {...state, angry : state.angry + 1}
+    default:
       return state;
   }
 }

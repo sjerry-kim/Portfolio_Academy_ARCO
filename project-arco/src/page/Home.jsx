@@ -46,11 +46,11 @@ const Home = () => {
         // 퍼센트로 바꿔서 progress css의width값에 넣어주기
         let percentage = (curreY/totalY)*100;
         
-        if (percentage>=35){
+        if (percentage>=30){
           document.querySelector(".side-header").style.display = "flex";
-          document.querySelector(".side-header").style.animation = "fadein 2s";
+          document.querySelector(".side-header").style.animation = "fadein 1s";
         }else{
-          document.querySelector(".side-header").style.animation = "fadeout 2s";
+          document.querySelector(".side-header").style.animation = "fadeout 1s";
           document.querySelector(".side-header").style.display = "none";
         }
       }

@@ -2,6 +2,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { useNavigate } from "react-router-dom";
 
 const Lastest = () => {
   const settings = {
@@ -20,25 +21,31 @@ const Lastest = () => {
     { img: "homeless_2.jpg" },
     { img: "homeless_3.jpg" }
   ];
+
+  const navigate = useNavigate();
+
+  const moveDonation = () => {
+    navigate('/donation');
+    window.scroll(0,0);
+  }
   
   return (
-    <div>
-      <h2 style={{ marginBottom:" 50px", fontSize:"2.3em" }}>Abandoned Animals</h2>
-        <Container style={{ marginBottom:" 60px" }}>
+    <div className="lastest-box">
+      <h2>Abandoned Animals</h2>
+        <Container>
           <Row>
             <Col>
               <Slider {...settings}>
                 {
                   lastestImage.map((img,index)=>(
-                    <div key={index} className="mb-4">
-                        <img style={{width: "1050px", height: "600px", margin:"auto", objectFit:"cover", objectPosition:" top center" }} src={require(`../img/${img.img}`)}/>
+                    <div key={index} >
+                        <img src={require(`../img/${img.img}`)}/>
                     </div>
                   ))
                 }
               </Slider>
-              <div style={{width:"150px", height:"130px",
-                            display:"flex", backgroundColor:"darkgreen", position: "absolute", left:"5%" ,bottom:"66%"}}>
-                <p style={{ margin: "auto", fontSize:"1.8em", fontWeight:"bold", color:"white"}}>Divcover<br />more</p>
+              <div className="discover-box">
+                <a style={{color:"white"}} onClick={moveDonation}>Divcover<br />more</a>
               </div>
             </Col>
           </Row>

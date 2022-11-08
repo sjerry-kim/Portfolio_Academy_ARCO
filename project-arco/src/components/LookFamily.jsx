@@ -15,7 +15,7 @@ const LookFamily = () => {
   }
 
   return (
-    <div>
+    <div className='lookfamily-box'>
       <h1>We looking for new Family</h1>
       <CardGroup className='m-5'>
         {
@@ -24,7 +24,7 @@ const LookFamily = () => {
                 <Card.Img variant="top" src={require(`../img/${animal.img}`)}
                           style={{height:" 70%", objectFit:"cover"}}/>
                 <Card.Body style={{height:" 30%",position:"relative",overflow:"hidden"}}>
-                  <Card.Title>{animal.name} / {animal.age} / {animal.sex}</Card.Title>
+                  <Card.Title>{animal.name} / {animal.sex} / {animal.age}</Card.Title>
                   <Card.Text style={{position:"relative",overflow:"hidden"}}>
                     Hi. I'm {animal.name}. {animal.Introduction}
                   </Card.Text>
@@ -33,7 +33,7 @@ const LookFamily = () => {
           ))
         }
       </CardGroup>
-      <button onClick={moveMatchFamily} >Learn more about <span>Matching New Family</span></button>
+      <button onClick={moveMatchFamily} >Learn more</button>
     </div>
   );
 }
