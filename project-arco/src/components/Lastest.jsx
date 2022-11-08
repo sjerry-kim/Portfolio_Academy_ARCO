@@ -24,8 +24,8 @@ const Lastest = () => {
 
   const navigate = useNavigate();
 
-  const moveDonation = () => {
-    navigate('/donation');
+  const moveNewsletter = () => {
+    navigate('/about/publishing_newsletter');
     window.scroll(0,0);
   }
   
@@ -45,7 +45,7 @@ const Lastest = () => {
                 }
               </Slider>
               <div className="discover-box">
-                <a style={{color:"white"}} onClick={moveDonation}>Divcover<br />more</a>
+                <a style={{color:"white"}} onClick={moveNewsletter}>Divcover<br />more</a>
               </div>
             </Col>
           </Row>

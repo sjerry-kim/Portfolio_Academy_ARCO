@@ -46,7 +46,7 @@ const Home = () => {
         // 퍼센트로 바꿔서 progress css의width값에 넣어주기
         let percentage = (curreY/totalY)*100;
         
-        if (percentage>=30){
+        if (percentage>=23){
           document.querySelector(".side-header").style.display = "flex";
           document.querySelector(".side-header").style.animation = "fadein 1s";
         }else{
@@ -86,7 +86,7 @@ const Home = () => {
           </a>
         </div>
       </div>
-      <div className="side-header delete" >
+      <div className="side-header" >
         <div className="side-title">
           <NavLink to='/' element={<Home />}
           style={{ textDecoration: 'none' , fontWeight: 'bold', color: '#e64a19'}}>
