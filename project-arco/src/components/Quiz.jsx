@@ -26,7 +26,7 @@ const Quiz = () => {
     <div>
       <section className="quiz-box">
         <h1>Quiz</h1>
-        <h3>how many animals are abondoned in a year?</h3>
+        <h3>How many animals are abondoned in a year?</h3>
         <div className="quiz-radio-box">
             <Form.Check type="radio" 
                         name="quiz" label={`10,000`} onClick={()=>{setCorrect("wrong")}}/>

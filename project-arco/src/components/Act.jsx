@@ -8,7 +8,7 @@ import { useNavigate } from "react-router-dom";
 
 const Act = () => {
   const settings = {
-    dots: false,
+    dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
@@ -16,8 +16,7 @@ const Act = () => {
     autoplay: true,
     autoplaySpeed: 3000,
     cssEase: "linear",
-    nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />,
+    arrows: false,
   };
 
   const actCards =[
@@ -38,22 +37,22 @@ const Act = () => {
   const navigate= useNavigate();
   
   return (
-    <div>
-      <Container style={{margin:"auto", display:"flex", justifyContent:"center"}}>
-        <Row style={{width: "100%"}}>
-          <Col>
+    <div className="act-box">
+      <h1>Acts</h1>
+      <Container>
+        <Row>
+          
             <Slider {...settings}>
               {
                 actCards.map((cards, index)=>(
                   <div key={index}>
-                    <img src={require(`../img/${cards.img}`)} onClick={()=>{ navigate(cards.url); window.scrollTo(0,0)}} /* 보수 ! */
-                        style={{width:"100%", height:"500px", objectFit:"cover", objectPosition:"center"}} />
-                    <h2 style={{width:"8%", fontSize:"1.7em", color: "#ffffff" ,position: "fixed", bottom:"3%", textAlign:"left", marginLeft:"10px"}}>{cards.title}</h2>
+                    <img src={require(`../img/${cards.img}`)} onClick={()=>{ navigate(cards.url); window.scrollTo(0,0)}} /* 보수 ! *//>
+                    <h2>{cards.title}</h2>
                   </div>
                 ))
               }
             </Slider>
-          </Col>
+          
         </Row>
       </Container>
     </div>
@@ -61,23 +60,3 @@ const Act = () => {
 }
 
 export default Act;
-
-function SampleNextArrow(props) {
-  const { className, style, onClick } = props;
-  return (
-    <FontAwesomeIcon icon={faChevronRight} 
-    className={className}
-    onClick={onClick}
-    style={{color: "gray", margin: "0"}}/>
-  );
-}
-
-function SamplePrevArrow(props) {
-  const { className, style, onClick } = props;
-  return (
-    <FontAwesomeIcon icon={faChevronLeft} 
-    className={className}
-    onClick={onClick}
-    style={{color: "gray",  margin: "0"}}/>
-  );
-}

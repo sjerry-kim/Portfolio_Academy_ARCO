@@ -17,7 +17,7 @@ const LookFamily = () => {
   return (
     <div className='lookfamily-box'>
       <h1>We looking for new Family</h1>
-      <CardGroup className='m-5'>
+      <CardGroup>
         {
           state.animal.filter((exAnimal) => (exAnimal.expose === "yes")).map((animal, index)=>(
               <Card key={index}>
@@ -33,7 +33,7 @@ const LookFamily = () => {
           ))
         }
       </CardGroup>
-      <button onClick={moveMatchFamily} >Learn more</button>
+      <button onClick={moveMatchFamily} >Meeting more animal friends</button>
     </div>
   );
 }

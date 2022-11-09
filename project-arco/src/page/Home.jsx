@@ -88,22 +88,18 @@ const Home = () => {
       </div>
       <div className="side-header" >
         <div className="side-title">
-          <NavLink to='/' element={<Home />}
-          style={{ textDecoration: 'none' , fontWeight: 'bold', color: '#e64a19'}}>
+          <NavLink to='/' element={<Home />}>
             ARCO
           </NavLink>
         </div>
         <nav className="side-nav">
-          <NavLink to='/about' element={<About />} onClick="window.scrollTo(0,0);"
-          style={{ textDecoration: 'none' , margin: '8px', color: '#ffffff'}}>
+          <NavLink to='/about' element={<About />} onClick="window.scrollTo(0,0);">
             About Us
           </NavLink>
-          <NavLink to='/donation' element={<Donation />} onClick="window.scrollTo(0,0);"
-          style={{ textDecoration: 'none' , margin: '8px', color: '#ffffff'}}>
+          <NavLink to='/donation' element={<Donation />} onClick="window.scrollTo(0,0);">
             Donation
           </NavLink>
-          <NavLink to='/safecenter' element={<SafeCenter />} onClick="window.scrollTo(0,0);"
-          style={{ textDecoration: 'none' , margin: '8px', color: '#ffffff'}}>
+          <NavLink to='/safecenter' element={<SafeCenter />} onClick="window.scrollTo(0,0);">
             Safe Center
           </NavLink>
         </nav>
@@ -114,18 +110,14 @@ const Home = () => {
                 <button onClick={()=>{navigate('/mypage')}}>
                   My Page
                 </button>
-                <button
-                  style={{ textDecoration: 'none', color: '#2C3D4F'}}
-                  onClick={checkLogout}>
+                <button onClick={checkLogout}>
                   Sign Out
                 </button>
               </div>
             ):(
-              <button
-          style={{ textDecoration: 'none', color: '#ffffff'}}
-          onClick={checkLogin}>
-            Sign In
-          </button>
+              <button onClick={checkLogin}>
+                Sign In
+              </button>
             )
           }
         </div>

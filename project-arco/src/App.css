@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
 .App {
   text-align: center;
-  font-family: 'Noto Sans', sans-serif;
   font-family: 'Noto Sans KR', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 .App-logo {
@@ -111,6 +110,8 @@
   background-size: cover;
   background-attachment: fixed;
   background-position: bottom center;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 .big-box{
@@ -124,7 +125,7 @@
 .big-title{
   position: fixed;
   top: 110px;
-  left: 20px;
+  left: 26px;
   width: 600px;
   height: 210px;
   padding-top: 10px;
@@ -196,7 +197,6 @@
   z-index: 501;
 }
 
-
 @keyframes fadein{
   from{ opacity: 0;}
   to{ opacity: 1;}
@@ -214,8 +214,15 @@
   padding: 0;
   display: flex;
   justify-content: flex-start;
-  margin: 15% 0 0 10%;
-  font-size: 2em;
+  margin: 13% 0 0 12%;
+  font-size: 2.5em;
+}
+
+.side-title a{
+  text-decoration: none;
+  font-weight: bold;
+  color: #EB6440;
+  text-shadow: 0 0 3px black;
 }
 
 .side-nav{
@@ -226,8 +233,35 @@
   font-size: 1.2em;
 }
 
+.side-nav a{
+  text-decoration: none;
+  margin: 8px;
+  color: #ffffff;
+  font-size: 1.2em;
+  text-shadow: 0 0 3px black;
+}
+
+.side-nav a:hover{
+  color: #EB6440;
+  text-shadow: 0 0 1px lemonchiffon;
+}
+
 .side-login{
   height: 15%;
+}
+
+.side-login button{
+  text-decoration: none;
+  color: #ffffff;
+  border: none;
+  background-color: transparent;
+  font-size: 1.2em;
+  text-shadow: 0 0 3px black;
+}
+
+.side-login button:hover{
+  color: #EB6440;
+  text-shadow: 0 0 1px lemonchiffon;
 }
 
 .lastest-box{
@@ -237,8 +271,9 @@
 
 .lastest-box h2{
   margin: 40px auto;
-  font-size: 2.3em;
+  font-size: 2.8em;
   font-weight: bold;
+  color: #395144;
 }
 
 .lastest-box img{
@@ -251,12 +286,13 @@
 
 .lastest-box .discover-box{
   width:150px;
-  height:130px;
+  height:150px;
   display:flex;
-  background-color:darkgreen;
+  background-color:#D6E4E5;
   position: relative;
   bottom: 60px;
   left: 30px;
+  border-radius: 50%;
 }
 
 .lastest-box .discover-box a{
@@ -267,12 +303,29 @@
 }
 
 .lastest-box .discover-box:hover{
-  background-color: rgb(1, 66, 1);
+  animation: big 0.5s;
+  animation-fill-mode:forwards;
+  background-color: #ccdadb;
+}
+
+.lastest-box .discover-box:not(hover){
+  animation: small 0.5s;
+  animation-fill-mode:forwards;
+}
+
+@keyframes big{
+  from{width: 150px; height: 150px;}
+  to{width: 180px; height: 180px;}
+}
+
+@keyframes small{
+  from{width: 180px; height: 180px;}
+  to{width: 150px; height: 150px;}
 }
 
 .donation-box{
   height: 250px;
-  background-color: #e27f22;
+  background-color: #f66b0ee8;
   padding: 40px;
 }
 
@@ -296,9 +349,9 @@
   flex-direction: column;
   width: 85%;
   height: 400px;
-  margin-top: 140px;
-  margin-bottom: 0px;
-  background-color: lightgray;
+  margin-top: 200px;
+  margin-bottom: 80px;
+  background-color: #EFEFEF;
   padding: 50px;
 }
 
@@ -309,6 +362,7 @@
 }
 
 .quiz-box h3{
+  font-size: 2em;
   margin-bottom: 30px;
   text-align: center;
   margin-bottom: 10px;
@@ -324,45 +378,77 @@
 .quiz-radio-box .form-check{
   width: 80px;
   display: inline-block;
-  margin-right: 40px;
+  margin-right: 60px;
   font-weight: 600;
+  font-size: 1.5em;
+}
+
+.quiz-radio-box .form-check:hover{
+  color: #497174;
+  font-style: italic;
 }
 
 .quiz-box button{
-  width: 140px;
+  width: 170px;
   height: 90px;
-  padding: 0;
-  margin-left: 95%;
-  font-size: 1.3em;
+  padding: 10px 25px;
+  margin-left: 93%;
+  font-size: 2.0em;
   border: none;
   border-radius: 10px;
   color: white;
-  background-color: darkgreen;
+  background-color: #497174;
 }
 
 .quiz-box button:hover{
-  background-color: rgb(1, 66, 1);
+  background-color: #3b5c5e;
 }
 
 .lookfamily-box{
-  
   padding-top: 120px;
 }
 
 .lookfamily-box h1{
-  color: rgb(1, 66, 1);
+  font-size: 2.8em;
+  color: #395144;
   font-weight: bold;
+}
+
+.lookfamily-box .card-group{
+  width: auto;
+  height: auto;
+  margin: 50px 50px 40px 50px;
+}
+
+.lookfamily-box .card{
+  border: none;
+  padding: 10px;
+}
+
+.lookfamily-box .card-img-top{
+  width: auto;
+}
+
+.lookfamily-box .card-title{
+  font-size: 1.5em;
+}
+
+.lookfamily-box .card-text{
+  font-size: 1.1em;
 }
 
 .lookfamily-box button{
   padding: 20px 50px;
-  font-size: 1.5em;
-  font-weight: 600;
+  font-size: 2em;
+  font-weight: bold;
   border: none;
   background-color: lemonchiffon;
-  color: #2C3D4F;
+  color: #497174;
   border-radius: 10px;
-  
+}
+
+.lookfamily-box button:hover{
+  background-color: rgb(240, 235, 194);
 }
 
 /*여기서부터 ! 😅😅😅*/
@@ -383,18 +469,36 @@
     z-index: 1000;
   }
 
+  .glb-title{
+    width: 15%;
+    margin-left: 10px;
+  }
+
+  .glb-nav{
+    justify-content: center;
+  }
+
+  .glb-nav a{
+    padding-left: 0px;
+    margin: auto 30px;
+  }
+
+  .glb-login{
+    width: 15%;
+  }
+
   .side-header{
-    opacity: 0;;
+    visibility: hidden;
   }
 
   .home-body{
-    height: 3000px;
+    height: 3200px;
   }
 
   .home-main{
     width: 100%;
     z-index: 999;
-    height: 3000px;
+    height: 3200px;
   }
 
   .lastest-box img{
@@ -404,128 +508,83 @@
   }
 }
 
-@media screen and (max-width: 717px){
-  .glb-header{
-    z-index: 1000;
-  }
-
-  .glb-title{
-    margin-left: 7px;
-  }
-
-  .glb-title a{
-    font-size: 1.1em;
-  }
-
-  .glb-nav a{
-    font-size: 0.8em;
-    padding-left: 0px;
-    margin-right: 20px;
-  }
-
-  .glb-login{
-    width: 15%;
-  }
-
-  .glb-login button{
-    font-size: 0.5em;
-    margin-right: 0px;
-  }
-  
-  .side-header{
-    opacity: 0;
-  }
-
-  .big-title{
-    width: 330px;
-    height: 160px;
-    margin-left: 52px;
-  }
-
-  .big-title h1{
-    font-size: 2em;
-  }
-
-  .home-body{
-    height: 3000px;
-  }
-
-  .home-main{
-    width: 100%;
-    z-index: 999;
-    height: 3000px;
-    position: absolute; top: 0; left: 0;
-  }
-
-  .lastest-box img{
-    width: 500px;
-    height: 350px;
-    object-position: center;
-  }
-
-  .lastest-box .discover-box{
-    width: 100px;
-    height: 90px;
-    position: relative;
-    left: 15px;
-  }
-
-  .lastest-box .discover-box a{
-    font-size: 1em;
-  }
-
-  .quiz-box{
-    width: 100%;
-  }
-
-  .quiz-box h3{
-    text-align: start;
-  }
-
-  .quiz-radio-box{
-    justify-content: start;
-  }
-
-  .quiz-box button{
-    width: 100px;
-    margin-left: 75%;
-  }
-
-}
-
-@media screen and (max-width: 574px){
-  .home-main{
-    width: 100%;
-    z-index: 999;
-    height: 4500px;
-    position: absolute; top: 0; left: 0;
-  }
-}
-
-
-
 /*About*/
 .about-background{
   width: 100%;
-  height: 4500px;
+  height: 5200px;
   background-color: #ffffff;
   position: absolute; top: 100px; left: 0;
   z-index: 501;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 .first-sentence{
+  font-size: 3em;
   margin-top: 250px;
+  margin-bottom: 800px;
   opacity: 0;
+  transition: opacity 0.5s; 
+  transition-delay: 0.1s;
+}
+
+.second-sentence-box{
+  background: linear-gradient(white,#6D9886, #374b42);
+  padding-top: 1500px;
+  padding-bottom: 1000px;
+}
+
+.second-sentence{
+  color: white;
+  font-size: 2.5em;
   transition: opacity 0.7s; 
   transition-delay: 0.1s;
 }
 
-.second-sentence{
-  margin-top: 1300px;
-  margin-bottom: 1500px;
-  transition: opacity 0.7s; 
-  transition-delay: 0.1s;
+.act-box{
+  background-color: #374b42;
+  height: 1300px;
 }
+
+.act-box h1{
+  font-size: 3.8em;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #EFF5F5;
+}
+
+.act-box .container{
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.act-box .row{
+  width: 100%;
+}
+
+.act-box .slick-slider img{
+  width: 100%;
+  height: 800px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.act-box .slick-slider h2{
+  width: 8%;
+  font-size: 2em;
+  color: #ffffff;
+  position: fixed;
+  bottom: 3%;
+  text-align: left;
+  margin-left: 25px;
+}
+
+.act-box .slick-slider h2:hover{
+  text-shadow: 0 0 5px lemonchiffon;
+}
+
+
 
 .article-header{
   display:flex;
@@ -624,7 +683,7 @@
 .comment-box .text-box button{
   width: 100px;
   border: none;
-  background-color: darkgreen;
+  background-color: #D6E4E5;
   color: white;
   text-align: center;
   margin-top: 5px;
@@ -695,7 +754,6 @@
 
 .matching-header .bottom button:hover{
   font-size: 4.2em;
-  text-shadow: 0 0 3px darkgray;
 }
 
 .adoption-app{
@@ -703,6 +761,209 @@
   background-color: gray;
   padding: 100px;
   margin-top: 100px;
+}
+
+
+@media screen and (max-width: 768px){
+  .glb-header{
+    z-index: 1000;
+  }
+
+  .side-header{
+    visibility: hidden;
+  }
+
+  .big-title{
+    width: 330px;
+    height: 160px;
+    margin-left: 52px;
+  }
+
+  .big-title h1{
+    font-size: 2em;
+  }
+
+  .home-body{
+    height: 3100px;
+  }
+
+  .home-main{
+    width: 100%;
+    z-index: 999;
+    height: 3100px;
+    position: absolute; top: 0; left: 0;
+  }
+
+  .lastest-box img{
+    width: 500px;
+    height: 350px;
+    object-position: center;
+  }
+
+  .lastest-box .discover-box{
+    width: 100px;
+    height: 90px;
+    position: relative;
+    left: 15px;
+  }
+
+  .lastest-box .discover-box a{
+    font-size: 1.5em;
+  }
+
+  .quiz-box{
+    width: 100%;
+    height: 450px;
+  }
+
+  .quiz-box h3{
+    text-align: center;
+  }
+
+  .quiz-radio-box{
+    justify-content: center;
+  }
+
+  .quiz-box button{
+    width: 170px;
+    height: 70px;
+    margin: auto;
+  }
+
+  .lookfamily-box .card-group{
+    height: 650px;
+    margin-bottom: 5%;
+  }
+
+  .lookfamily-box .card-title{
+    font-size: 1.2em;
+  }
+
+  .lookfamily-box .card-text{
+    font-size: 0.85em;
+  }
+
+  .first-sentence{
+    font-size: 2.5em;
+  }
+
+  .second-sentence{
+    font-size: 2em;
+  }
+
+  .act-box h1{
+    font-size: 3em;
+  }
+
+  .act-box .slick-slider img{
+    height: 500px;
+  }
+
+}
+
+@media screen and (max-width: 575px){
+  .glb-header{
+    z-index: 1000;
+  }
+
+  .glb-title{
+    width: 15%;
+    margin-left: 10px;
+  }
+
+  .glb-title a{
+    font-size: 1.1em;
+  }
+
+  .glb-nav{
+    justify-content: center;
+  }
+
+  .glb-nav a{
+    font-size: 0.8em;
+    padding-left: 0px;
+    margin: auto 15px;
+  }
+
+  .glb-login{
+    width: 15%;
+  }
+
+  .glb-login button{
+    font-size: 0.5em;
+    margin-right: 0px;
+  }
+
+  .home-body{
+    height: 4700px;
+  }
+
+  .home-main{
+    width: 100%;
+    z-index: 999;
+    height: 4700px;
+    position: absolute; top: 0; left: 0;
+  }
+
+  .lookfamily-box .card-group{
+    height: 80%;
+    margin-bottom: 5%;
+  }
+
+  .lookfamily-box button{
+    font-size: 1.5em;
+  }
+
+  .about-background{
+    height: 5000px;
+  }
+
+  .first-sentence{
+    font-size: 2em;
+  }
+
+  .second-sentence{
+    font-size: 1.5em;
+  }
+
+  .act-box h1{
+    font-size: 2.5em;
+  }
+
+  .act-box .slick-slider img{
+    height: 500px;
+  }
+
+  .act-box .slick-slider h2{
+    font-size: 1.5em;
+  }
+
+}
+
+@media screen and (max-width: 390px){
+  .glb-title{
+    width: 90px;
+    margin-left: 20px;
+    justify-content: start;
+  }
+  
+  .glb-title a{
+    font-size: 1em;
+  }
+  
+  .glb-nav{
+    justify-content: center;
+  }
+  
+  .glb-nav a{
+    font-size: 0.5em;
+    padding-left: 0px;
+    margin-right: 20px;
+  }
+  
+  .glb-login{
+    width: 20%;
+  }
 }
 
 
@@ -716,6 +977,8 @@
   background-position: left;
   position: absolute; top: 100px; left: 0;
   z-index: 501;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
   
 }
 
@@ -729,6 +992,8 @@
   background-position: top right;
   position: absolute; top: 100px; left: 0;
   z-index: 501;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 /*Login*/
@@ -805,7 +1070,7 @@
   margin: 20px 8px 20px 15px;
   border-radius: 50%;
   color: white;
-  background-color: darkgreen;
+  background-color: #D6E4E5;
 }
 
 .counselor-p{
