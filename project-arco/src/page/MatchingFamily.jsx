@@ -12,14 +12,14 @@ const MatchingFamily = () => {
     <div>
       <header className="matching-header">
         <div className="top">
-          <h1 style={{margin:"15px 20px", fontSize:"3.3em"}}>Matching New Family</h1>
-          <Link to='/' element={<Home />} style={{}}> 
+          <h1>Matching New Family</h1>
+          <Link to='/' element={<Home />}> 
             ARCO Home
           </Link>
         </div>
         <div className="bottom">  {/* ↓ 다시 고치기 */}
-            <button onClick={()=>{window.scrollTo(1400,1400)}} >Adoption application</button>
-          <img src={require(`../img/${"cat_hand.jpg"}`)} alt="" style={{width:"600px", height:"400px", marginTop:"50px"}} />
+          <button onClick={()=>{window.scrollTo(1400,1400)}} >Adoption <br /> application</button>
+          <img src={require(`../img/${"cat_hand.jpg"}`)} />
         </div>
       </header>
       <CardGroup className='m-5'>

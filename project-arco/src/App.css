@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 .App {
   text-align: center;
@@ -464,50 +465,6 @@
   color: #ffffff;
 }
 
-@media screen and (max-width: 1000px){
-  .glb-header{
-    z-index: 1000;
-  }
-
-  .glb-title{
-    width: 15%;
-    margin-left: 10px;
-  }
-
-  .glb-nav{
-    justify-content: center;
-  }
-
-  .glb-nav a{
-    padding-left: 0px;
-    margin: auto 30px;
-  }
-
-  .glb-login{
-    width: 15%;
-  }
-
-  .side-header{
-    visibility: hidden;
-  }
-
-  .home-body{
-    height: 3200px;
-  }
-
-  .home-main{
-    width: 100%;
-    z-index: 999;
-    height: 3200px;
-  }
-
-  .lastest-box img{
-    width: 800px;
-    height: 500px;
-    object-position: center;
-  }
-}
-
 /*About*/
 .about-background{
   width: 100%;
@@ -584,13 +541,25 @@
   text-shadow: 0 0 5px lemonchiffon;
 }
 
-
+.publishing-background{
+  font-family: 'Noto Serif', serif;
+}
 
 .article-header{
   display:flex;
   justify-content: space-between; 
   padding: 10px 30px;
   margin-bottom: 30px;
+}
+
+.article-header h1{
+  margin: 15px 20px;
+  font-size: 3.3em;
+}
+
+.article-header a{
+  text-decoration: none;
+  color: black;
 }
 
 .article-main h1{
@@ -619,7 +588,7 @@
 }
 
 .first-paragraph::first-letter {
-  font-size: 2.5em;
+  font-size: 2em;
 }
 
 .emotion-box{
@@ -646,7 +615,7 @@
 }
 
 .emotion-box div button:hover{
-  font-size: 2em;
+  font-size: 1.6em;
 }
 
 .comment-box{
@@ -683,10 +652,16 @@
 .comment-box .text-box button{
   width: 100px;
   border: none;
-  background-color: #D6E4E5;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #385f4b;
   color: white;
   text-align: center;
   margin-top: 5px;
+}
+
+.comment-box .text-box button:hover{
+  background-color: #384d42;
 }
 
 .added-comment-box{
@@ -716,7 +691,7 @@
   text-align: end;
 }
 
-.article-section .top-botton{
+.article-section .top-botton{  /*✨💜✨*/
   display: none;
   position: fixed;
   bottom: 30px;
@@ -724,7 +699,9 @@
 }
 
 .article-section .top-botton button{
-  border: 1px solid gray;
+  border: none;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
   background-color: rgba(255, 255, 255, 0.5);
   color: black;
 }
@@ -733,6 +710,11 @@
   display:flex;
   justify-content: space-between; 
   padding: 10px 30px;
+}
+
+.matching-header .top h1{
+  margin: 15px 20px;
+  font-size: 3.3em;
 }
 
 .matching-header .bottom{
@@ -756,6 +738,12 @@
   font-size: 4.2em;
 }
 
+.matching-header .bottom img{
+  width: 600px;
+  height: 400px;
+  margin-top: 50px;
+}
+
 .adoption-app{
   height: 1000px;
   background-color: gray;
@@ -763,6 +751,68 @@
   margin-top: 100px;
 }
 
+@media screen and (max-width: 1000px){
+  .glb-header{
+    z-index: 1000;
+  }
+
+  .glb-title{
+    width: 15%;
+    margin-left: 10px;
+  }
+
+  .glb-nav{
+    justify-content: center;
+  }
+
+  .glb-nav a{
+    padding-left: 0px;
+    margin: auto 30px;
+  }
+
+  .glb-login{
+    width: 15%;
+  }
+
+  .side-header{
+    visibility: hidden;
+  }
+
+  .home-body{
+    height: 3200px;
+  }
+
+  .home-main{
+    width: 100%;
+    z-index: 999;
+    height: 3200px;
+  }
+
+  .lastest-box img{
+    width: 800px;
+    height: 500px;
+    object-position: center;
+  }
+
+  .matching-header .bottom{
+    height: 250px;
+  }
+
+  .matching-header .bottom button{
+    font-size: 3em;
+  }
+
+  .matching-header .bottom button:hover{
+    font-size: 3.2em;
+  }
+
+  .matching-header .bottom img{
+    width: 400px;
+    height: auto;
+    margin-top: 0;
+  }
+
+}
 
 @media screen and (max-width: 768px){
   .glb-header{
@@ -859,6 +909,26 @@
     height: 500px;
   }
 
+  .article-header h1{
+    font-size: 2.8em;
+  }
+
+  .article-main h1{
+    font-size: 2.5em;
+  }
+
+  .article-section h2{
+    font-size: 2em;
+  }
+
+  .matching-header .bottom button{
+    font-size: 2.2em;
+  }
+
+  .matching-header .bottom button:hover{
+    font-size: 2.3em;
+  }
+
 }
 
 @media screen and (max-width: 575px){
@@ -936,6 +1006,40 @@
 
   .act-box .slick-slider h2{
     font-size: 1.5em;
+  }
+
+  .article-header h1{
+    font-size: 2.2em;
+  }
+
+  .article-main h1{
+    font-size: 2em;
+  }
+
+  .article-section h2{
+    font-size: 1.5em;
+  }
+
+  .article-section p{
+    font-size: 1.1em;
+  }
+
+  .first-paragraph::first-letter {
+    font-size: 1.8em;
+  }
+
+  .matching-header .bottom button{
+    font-size: 1.8em;
+  }
+
+  .matching-header .bottom button:hover{
+    font-size: 1.9em;
+  }
+
+  .matching-header .bottom img{
+    width: 350px;
+    height: auto;
+    margin-top: 0;
   }
 
 }

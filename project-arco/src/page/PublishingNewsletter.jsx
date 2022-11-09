@@ -39,10 +39,10 @@ const PublishingNewsletter = () => {
         }
 
   return ( 
-    <div>
+    <div className="publishing-background">
       <header className="article-header">
-        <h1 style={{margin:"15px 20px", fontSize:"3.3em"}}>ARCO Newsletter</h1>
-        <Link to='/' element={<Home/>} style={{}}> 
+        <h1>ARCO Newsletter</h1>
+        <Link to='/' element={<Home/>}> 
           ARCO Home
         </Link>
       </header>
@@ -50,8 +50,7 @@ const PublishingNewsletter = () => {
         <h1>November's article</h1>
         <section className="article-section">
           <h2>100,000 abandoned animals a year in Korea.</h2>
-          <img src={require("../img/homeless_4.jpg")} alt="no image"
-                style={{width:"100%", height: "40%", objectFit:"cover "}}/>
+          <img src={require("../img/homeless_4.jpg")} alt="no image"/>
           <p className="first-paragraph">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
             tempor incididunt ut labore et dolore magna aliqua. Nisl tincidunt eget 

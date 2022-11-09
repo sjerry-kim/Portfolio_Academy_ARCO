@@ -33,7 +33,7 @@ const CommentBox = () => {
             </div>
             <div className="text-box">
             <textarea type="text" className="text-area"
-              onChange={(e)=>{setText(e.target.value)}} placeholder="Comment your review."/>
+              onChange={(e)=>{setText(e.target.value)}} placeholder="Comment your reviews."/>
             <button onClick={addMemo}>comment</button>
             </div>
             <div className="added-comment-box">
