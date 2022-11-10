@@ -1,6 +1,7 @@
 import { useContext } from "react";
-import { Card, CardGroup } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import Footer from "../components/Footer";
 import SubmitAdoptionApp from "../components/SubmitAdoptionApp";
 import DataContext from "../context/DataContext";
 import Home from "./Home";
@@ -9,7 +10,7 @@ const MatchingFamily = () => {
   const {state} = useContext(DataContext);
 
   return (
-    <div>
+    <div className="matching-background">
       <header className="matching-header">
         <div className="top">
           <h1>Matching New Family</h1>
@@ -18,26 +19,26 @@ const MatchingFamily = () => {
           </Link>
         </div>
         <div className="bottom">  {/* ↓ 다시 고치기 */}
-          <button onClick={()=>{window.scrollTo(1400,1400)}} >Adoption <br /> application</button>
+          <button onClick={()=>{window.scrollTo(1600,1600)}} >Adoption <br /> application</button>
           <img src={require(`../img/${"cat_hand.jpg"}`)} />
         </div>
       </header>
-      <CardGroup className='m-5'>
+      <div className="matching-cards">
         {
           state.animal.map((animal, index)=>(
               <Card key={index}>
-                <Card.Img variant="top" src={require(`../img/${animal.img}`)}
-                          style={{height:" 70%", objectFit:"cover"}}/>
-                <Card.Body style={{height:" 30%",position:"relative",overflow:"hidden"}}>
-                  <Card.Title>{animal.name} / {animal.age} / {animal.sex}</Card.Title>
-                  <Card.Text style={{position:"relative",overflow:"hidden"}}>
-                    Hi. I'm {animal.name}. {animal.Introduction}
+                <Card.Img variant="top" src={require(`../img/${animal.img}`)}/>
+                <Card.Body>
+                  <Card.Title>{animal.name}</Card.Title>
+                  <Card.Text>
+                    {animal.sex} | {animal.age}  <br />
+                    Neutralization : {animal.neutralization} <br />
                   </Card.Text>
                 </Card.Body>
               </Card>
           ))
         }
-      </CardGroup>
+      </div>
       <div className="adoption-app">
         <h1>Adoption Application</h1>
         <SubmitAdoptionApp />

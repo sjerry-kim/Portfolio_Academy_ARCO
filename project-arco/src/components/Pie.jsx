@@ -15,17 +15,17 @@ const Pie = () => {
 
   return (
     // chart height이 100%이기 때문이 chart를 덮는 마크업 요소에 height 설정
-    <div style={{ width: '600px', height: '400px', margin: '100px auto' }}>
+    <div className='pie-div' >
       <ResponsivePie
         /* chart에 사용될 데이터 */
         data={[
           { id: 'Safe Center', value: 69 },
-          { id: 'Volunteer Work', value: 21 },
+          { id: `Volunteer Work`, value: 21 },
           { id: 'Management', value: 10 },
         ]}
 
         /* chart margin */
-        margin={{ top: 40, right: 80, bottom: 80, left: 80 }}
+        margin={{ top: 30, right: 95, bottom: 30, left: 130 }}
 
         /* chart 중간 빈공간 반지름 */
         innerRadius={0.5}
@@ -48,7 +48,7 @@ const Pie = () => {
         arcLinkLabelsSkipAngle={0}
 
         /* link label 색상 */
-        arcLinkLabelsTextColor="#000000"
+        arcLinkLabelsTextColor="#EFEFEF"
               
         /* link label 연결되는 선 두께 */
         arcLinkLabelsThickness={2}
@@ -63,15 +63,15 @@ const Pie = () => {
                 /* label style (pad에 표현되는 글씨) */
                 labels: {
                   text: {
-                          fontSize: 15,
-                          fill: '#000000',
+                          fontSize: 12,
+                          fill: '#112B3C',
                         },
                       },
                 /* legend style (default로 하단에 있는 색상별 key 표시) */
                 legends: {
                   text: {
-                          fontSize: 13,
-                          fill: '#000000',
+                          fontSize: 11,
+                          fill: '#ffffff',
                         },
                       },
               }}
@@ -85,13 +85,13 @@ const Pie = () => {
               anchor: 'bottom', // 위치
               direction: 'column', // item 그려지는 방향
               justify: false, // 글씨, 색상간 간격 justify 적용 여부
-              translateX: 180, // chart와 X 간격
+              translateX: 120, // chart와 X 간격
               translateY: 70, // chart와 Y 간격
               itemsSpacing: 5, // item간 간격
               itemWidth: 70, // item width
               itemHeight: 18, // item height
               itemDirection: 'left-to-right', // item 내부에 그려지는 방향
-              itemOpacity: 1, // item opacity
+              itemOpacity: 0, // item opacity
               symbolSize: 18, // symbol (색상 표기) 크기
               symbolShape: 'circle', // symbol (색상 표기) 모양
               effects: [

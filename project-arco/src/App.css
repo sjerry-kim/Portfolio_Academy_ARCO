@@ -706,6 +706,10 @@
   color: black;
 }
 
+.matching-background{
+  
+}
+
 .matching-header .top{
   display:flex;
   justify-content: space-between; 
@@ -714,7 +718,18 @@
 
 .matching-header .top h1{
   margin: 15px 20px;
-  font-size: 3.3em;
+  font-size: 3em;
+  font-weight: 600;
+}
+
+.matching-header .top a{
+  text-decoration: none;
+  font-size: 1.1em;
+  color: black;
+}
+
+.matching-header .top a:hover{
+  color: #EB6440;
 }
 
 .matching-header .bottom{
@@ -744,11 +759,147 @@
   margin-top: 50px;
 }
 
+.matching-cards{
+  width: 88%;
+  display: inline-block;
+}
+
+.matching-cards .card{
+  width: 250px;
+  height: 380px;
+  margin: 36px 50px;
+  display: inline-block;
+  box-shadow: 2px 1px 2px lightgray;
+}
+
+.matching-cards img{
+  width: 250px;
+  height: 70%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.matching-cards .card-body{
+  height: 30%;
+  position: relative;
+  overflow: hidden;
+  padding: 15px;
+}
+
+.matching-cards .card-text{
+  position: relative;
+  overflow: hidden;
+}
+
 .adoption-app{
-  height: 1000px;
-  background-color: gray;
-  padding: 100px;
+  height: 930px;
+  background-color: lightgray;
+  padding: 50px;
   margin-top: 100px;
+}
+
+.adoption-app h1{
+  margin: 40px 0;
+  font-size: 2.2em;
+  font-weight: bold;
+  color: #112B3C;
+}
+
+/*Donation*/
+.donation-background{
+  width: 100%;
+  height: 2100px;
+  background-image: url(../src/img/penguins_img.jpg);
+  background-size: cover;
+  background-attachment: scroll;
+  background-position: left;
+  position: absolute; top: 100px; left: 0;
+  z-index: 501;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.pie-box{
+  width: 100%;
+  height: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.pie-box h1{
+  width: 30%;
+  padding: 0;
+  margin: 160px 0 0 0;
+  font-size: 5em;
+  color: #EFF5F5;
+  text-align: start;
+}
+
+.pie-div{
+  width: 40%;
+  height: 100%;
+  margin: 200px 0;
+}
+
+.submit-dona-box{
+  width: 50%;
+  height: 600px;
+  margin: 400px auto;
+  padding: 50px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.submit-dona-box .form-label{
+  color: #EFEFEF;
+}
+
+.submit-dona-box .form-check{
+  color: #EFEFEF;
+}
+
+
+@media screen and (max-width: 1608px){
+  .matching-cards{
+    width: 88%;
+  }
+
+  .matching-cards .card{
+    width: 220px;
+    height: 340px;
+    margin: 30px 30px;
+  }
+
+  .matching-cards img{
+    width: 220px;
+  }
+}
+
+@media screen and (max-width: 1290px){
+  .matching-cards{
+    width: 89%;
+  }
+
+  .matching-cards .card{
+    width: 183px;
+    height: 300px;
+    margin: 30px 22px;
+  }
+
+  .matching-cards img{
+    width: 183px;
+  }
+
+  .matching-cards .card-body{
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 1037px){
+  .matching-cards .card{
+    margin: 30px 18px;
+  }
 }
 
 @media screen and (max-width: 1000px){
@@ -812,6 +963,41 @@
     margin-top: 0;
   }
 
+  .matching-cards{
+    width: 95%;
+  }
+
+  .matching-cards .card{
+    width: 165px;
+    height: 280px;
+    margin: 11px;
+  }
+
+  .matching-cards img{
+    width: 165px;
+    height: 60%;
+  }
+
+  .matching-cards .card-body{
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 804px){
+  .matching-cards .card{
+    margin: 6px
+  }
+  .matching-cards .card-title{
+    font-size: 1.1em;
+  }
+
+  .matching-cards .card-text{
+    font-size: 0.9em;
+  }
+
+  .matching-cards .card-body{
+    padding: 15px;
+  }
 }
 
 @media screen and (max-width: 768px){
@@ -921,6 +1107,10 @@
     font-size: 2em;
   }
 
+  .matching-header .top h1{
+    font-size: 2.5em;
+  }
+
   .matching-header .bottom button{
     font-size: 2.2em;
   }
@@ -929,7 +1119,32 @@
     font-size: 2.3em;
   }
 
+  .matching-cards{
+    width: 98%;
+  }
+
+  .matching-cards .card{
+    width: 130px;
+    height: 220px;
+    margin: 10px;
+  }
+
+  .matching-cards img{
+    width: 130px;
+    height: 60%;
+  }
 }
+
+@media screen and (max-width: 629px){
+  .matching-cards{
+    width: 90%;
+  }
+
+  .matching-cards .card{
+    margin: 7px 30px;
+  }
+}
+
 
 @media screen and (max-width: 575px){
   .glb-header{
@@ -1028,18 +1243,26 @@
     font-size: 1.8em;
   }
 
+  .matching-header .top h1{
+    font-size: 2em;
+  }
+
   .matching-header .bottom button{
-    font-size: 1.8em;
+    font-size: 1.5em;
   }
 
   .matching-header .bottom button:hover{
-    font-size: 1.9em;
+    font-size: 1.6em;
   }
 
   .matching-header .bottom img{
     width: 350px;
     height: auto;
     margin-top: 0;
+  }
+
+  .adoption-app h1{
+    font-size: 1.9em;
   }
 
 }
@@ -1068,23 +1291,30 @@
   .glb-login{
     width: 20%;
   }
+
+  .matching-header .bottom{
+    height: 200px;
+  }
+
+  .matching-header .bottom img{
+    width: 250px;
+  }
+
+  .matching-cards{
+    width: 98%;
+  }
+
+  .matching-cards .card{
+    margin: 10px 20px;
+  }
+
+  .adoption-app h1{
+    margin: 10px 0 40px 0;
+    font-size: 1.8em;
+  }
+
 }
 
-
-/*Donation*/
-.donation-background{
-  width: 100%;
-  height: 2100px;
-  background-image: url(../src/img/penguins_img.jpg);
-  background-size: cover;
-  background-attachment: scroll;
-  background-position: left;
-  position: absolute; top: 100px; left: 0;
-  z-index: 501;
-  font-family: 'Noto Sans KR', sans-serif;
-  font-family: 'Roboto Condensed', sans-serif;
-  
-}
 
 /*Safe Center*/
 .safecenter-background{

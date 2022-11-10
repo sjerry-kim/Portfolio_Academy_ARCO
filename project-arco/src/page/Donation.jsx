@@ -22,8 +22,13 @@ const Donation = () => {
   return (
     <body>
       <div className="donation-background">
-      <Pie />
-      <SubmitDonation />
+        <div className="pie-box">
+          <h1>Where did the donation go?</h1>
+          <Pie />
+        </div>
+        <div className="submit-dona-box">
+          <SubmitDonation />
+        </div>
       <Footer />
       </div>
     </body>
