@@ -501,28 +501,33 @@
 .act-box{
   background-color: #374b42;
   height: 1300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .act-box h1{
   font-size: 3.8em;
   font-weight: bold;
-  margin-bottom: 30px;
+  margin: 400px 0 30px 0;
   color: #EFF5F5;
 }
 
 .act-box .container{
-  margin: auto;
-  display: flex;
-  justify-content: center;
+  margin: 20px auto;
+  width: 1300px;
 }
 
-.act-box .row{
-  width: 100%;
+.slider-div{
+  width: 400px;
+  height: 500px;
+  margin: 0 auto;
 }
 
 .act-box .slick-slider img{
-  width: 100%;
-  height: 800px;
+  margin: auto;
+  width: 400px;
+  height: 500px;
   object-fit: cover;
   object-position: center;
 }
@@ -876,6 +881,24 @@
   }
 }
 
+@media screen and (max-width: 1399px){
+  .act-box .container{
+    margin: 20px auto;
+    width: 1200px;
+  }
+  
+  .slider-div{
+    width: 350px;
+    height: 450px;
+    margin: 0 auto;
+  }
+  
+  .act-box .slick-slider img{
+    width: 350px;
+    height: 450px;
+  }
+}
+
 @media screen and (max-width: 1290px){
   .matching-cards{
     width: 89%;
@@ -894,6 +917,30 @@
   .matching-cards .card-body{
     padding: 5px;
   }
+
+  .act-box .container{
+    margin: 20px auto;
+    width: 930px;
+    overflow: hidden;
+  }
+  
+  .slider-div{
+    width: 250px;
+    height: 350px;
+    margin: 0 3px;
+  }
+  
+  .act-box .slick-slider img{
+    width: 250px;
+    height: 350px;
+  }
+
+  .act-box .slick-slider h2{
+    width: 5%;
+    font-size: 1.6em;
+    margin-left: 30px;
+  }
+
 }
 
 @media screen and (max-width: 1037px){

@@ -11,13 +11,32 @@ const Act = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 1,
+    slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
     cssEase: "linear",
     arrows: false,
+    responsive: [
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 575,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   };
+
 
   const actCards =[
     { title: "Publishing newsletter",
@@ -45,7 +64,7 @@ const Act = () => {
             <Slider {...settings}>
               {
                 actCards.map((cards, index)=>(
-                  <div key={index}>
+                  <div className="slider-div" key={index}>
                     <img src={require(`../img/${cards.img}`)} onClick={()=>{ navigate(cards.url); window.scrollTo(0,0)}} /* 보수 ! *//>
                     <h2>{cards.title}</h2>
                   </div>
