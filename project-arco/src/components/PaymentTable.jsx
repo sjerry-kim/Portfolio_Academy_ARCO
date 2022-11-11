@@ -1,6 +1,10 @@
+import { useContext } from 'react';
 import Table from 'react-bootstrap/Table';
+import DataContext from '../context/DataContext';
 
 function PaymentTable() {
+  const {state} = useContext(DataContext);
+
   return (
     <div className='payment-table'>
       <h3>Danation History</h3>
@@ -9,29 +13,21 @@ function PaymentTable() {
           <tr>
             <th>#</th>
             <th>Date</th>
-            <th>Account holder</th>
+            <th>Name</th>
             <th>Amount</th>
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>1</td>
-            <td>2022.08.03</td>
-            <td>J*****</td>
-            <td>10,000</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>2022.09.02</td>
-            <td>J*****</td>
-            <td>10,000</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>2022.10.03</td>
-            <td>J*****</td>
-            <td>10,000</td>
-          </tr>
+          {
+            state.user.userTransfer.map((t,i)=>(
+              <tr>
+                <td>{i+1}</td>
+                <td>{t.date}</td>
+                <td>{t.name}</td>
+                <td>{t.amount}</td>
+              </tr>
+            ))
+          }
         </tbody>
       </Table>
     </div>

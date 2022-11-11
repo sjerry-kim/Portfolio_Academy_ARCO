@@ -4,10 +4,9 @@ const MyDonationPause = () => {
   const navigate = useNavigate();
 
   return (
-    <div>
-      <button 
-        onClick={()=>{navigate('/donation')}}
-        style={{width: "400px", height: "80px", fontSize: "1.8em", backgroundColor: "#D87E42", border:"none"}}>
+    <div className='my-dona-pause'>
+      <button className='my-dona-pause-btn'
+        onClick={()=>{navigate('/donation')}}>
         Go Back To Donate Again !
       </button>
     </div>

@@ -30,7 +30,7 @@ const MyProfile = () => {
               <div style={{
                             width:"150px", 
                             height:"150px",
-                            backgroundImage:`url(${require('../img/cat_hand.jpg')})`,
+                            backgroundImage:`url(${require('../img/default_profile.jpeg')})`,
                             backgroundSize: "cover",
                             borderRadius:"50%",
               }}></div>)

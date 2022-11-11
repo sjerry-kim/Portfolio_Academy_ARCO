@@ -5,6 +5,8 @@ import Form from 'react-bootstrap/Form';
 import { useRef } from 'react';
 import { useContext } from 'react';
 import DataContext from '../context/DataContext';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCamera } from "@fortawesome/free-solid-svg-icons";
 
 
 function ProfileUpdateModal() {
@@ -34,36 +36,35 @@ function ProfileUpdateModal() {
 
 
   return (
-    <>
+    <div className='profile-up-modal'>
       <Button onClick={handleShow} className="profile-modal-btn">
         Change the profile
       </Button>
       {/* 같은 공간에 있다가 show를 통해서 보여줬다가, 보여주지 않았다가 하는 제어로 사용 */}
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>프로필 사진을 추가해주세요</Modal.Title>
+          <Modal.Title>Add the image</Modal.Title>
         </Modal.Header>
-        
         <Modal.Body>
           {/* 추가된 사진 미리보기 */}
-          <div ref={imgShow} style={{width: "150px", height :"150px", backgroundColor:"lightgray"}}></div>
+          <div className='preview' ref={imgShow}>
+          <FontAwesomeIcon icon={faCamera} style={{color:"#ffffff",fontSize:"3em"}} />
+          </div>
           {/* 사진 파일을 받아올 input 태그 가져오기 */}
           <Form.Group controlId="formFile" className="mb-3">
-            <Form.Label>이미지 파일을 선택하세요</Form.Label>
             <Form.Control type="file" onChange={onLoadFile} />
           </Form.Group>
         </Modal.Body>
-
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
-            취소
+            Cancel
           </Button>
           <Button variant="primary" onClick={updateProfile}>
-            저장
+            Save
           </Button>
         </Modal.Footer>
       </Modal>
-    </>
+    </div>
   );
 }
 

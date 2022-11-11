@@ -8,8 +8,7 @@ import DataContext from '../context/DataContext';
 const Login = () => {
   const [id, setId] = useState("");
   const [pw, setPw] = useState("");
-  const data = useContext(DataContext);
-  const {state, action} = useContext(DataContext);
+  const {action} = useContext(DataContext);
   const navigate = useNavigate();
 
   const loginUser = () => {
@@ -20,8 +19,17 @@ const Login = () => {
       userDonation: true,
       userBank: "",
       userAccount:"",
-      userQuestions:[
-        {text: "i wonder when i can get a donation reciept..."},
+      userQuestions:[],
+      userTransfer:[
+        { date: "2022.08.03",
+          name: "J****",
+          amount: 10000},
+        { date: "2022.09.02",
+          name: "J****",
+          amount: 10000},
+        { date: "2022.10.03",
+          name: "J****",
+          amount: 10000},
       ]
     });
     navigate('/mypage');

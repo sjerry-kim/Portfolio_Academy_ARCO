@@ -25,7 +25,7 @@ const Pie = () => {
         ]}
 
         /* chart margin */
-        margin={{ top: 10, right: 150, bottom: 60, left: 150 }}
+        margin={{ top: 25, right: 150, bottom: 60, left: 150 }}
 
         /* chart 중간 빈공간 반지름 */
         innerRadius={0.5}

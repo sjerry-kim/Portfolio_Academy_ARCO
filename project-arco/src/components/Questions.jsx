@@ -9,13 +9,13 @@ const Questions = () => {
   const [questions, setQuestions] = useState()
 
   return ( 
-    <div style={{width:"100%", height:"100%"}}>
-      <div style={{width:"100%", height:"100%"}}>
-        <div className="QnA-box" style={{width: "100%", height:"85%", overflowY:"scroll"}}>
+    <div className="question-div">
+      <div className="question-area">
+        <div className="qna-box">
           <div className="counselor-box">
             <div className="counselor-profile">C</div>
             <div className="counselor-p">
-              <p>Please wait 2-3 days for the answers :)</p>
+              <p>Please wait 2-3 days for the answers :) aaaaaaaaaaaaa</p>
             </div>
           </div>
           {

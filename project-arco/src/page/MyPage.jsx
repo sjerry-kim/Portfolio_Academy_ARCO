@@ -15,7 +15,7 @@ const MyPage = () => {
   },[data.state.user])
 
   return (
-    <div>
+    
       <div className="mypage-background">
         <Link to='/' className="mypage-home-a" element={<Home/>}> 
           ARCO Home
@@ -30,7 +30,7 @@ const MyPage = () => {
           <Outlet />
         </section> 
       </div>
-    </div>
+    
   );
 }
 
