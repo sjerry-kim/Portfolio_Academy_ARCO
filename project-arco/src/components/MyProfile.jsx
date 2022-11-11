@@ -30,16 +30,10 @@ const MyProfile = () => {
               <div style={{
                             width:"150px", 
                             height:"150px",
-                            backgroundColor: "lightblue",
+                            backgroundImage:`url(${require('../img/cat_hand.jpg')})`,
+                            backgroundSize: "cover",
                             borderRadius:"50%",
-                            display: "flex",
-                            justifyContent: "center",
-                            alignItems: "center",
-                            color: "gray"
-              }}>
-                이미지가 없습니다
-              </div>
-            )
+              }}></div>)
           }
           <ProfileUpdateModal />
         </div>
@@ -53,7 +47,6 @@ const MyProfile = () => {
           <input type="password" value={data.state.user.userPassword} disabled style={{color:"gray", width: "200px", padding:"5px", marginTop: "2px",  borderRadius: "5px", border: "none"}}/>
         </div>
       </section>
-      
     </div>
   );
 }

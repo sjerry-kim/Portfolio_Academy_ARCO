@@ -21,8 +21,8 @@ function StopDonate() {
   }
 
   return (
-    <>
-      <Button onClick={handleShow} style={{backgroundColor:"transparent", border: "none", color: "gray", fontSize:"0.8em"}}>
+    <div className='stop-dona'>
+      <Button className='stop-dona-btn' onClick={handleShow}>
         Stop Donating
       </Button>
 
@@ -48,7 +48,7 @@ function StopDonate() {
           </Button>
         </Modal.Footer>
       </Modal>
-    </>
+    </div>
   );
 }
 

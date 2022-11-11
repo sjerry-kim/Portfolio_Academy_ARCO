@@ -35,7 +35,7 @@ function ProfileUpdateModal() {
 
   return (
     <>
-      <Button onClick={handleShow} style={{backgroundColor: "orange", border:"none", fontSize: "0.8em",marginTop: "10px"}}>
+      <Button onClick={handleShow} className="profile-modal-btn">
         Change the profile
       </Button>
       {/* 같은 공간에 있다가 show를 통해서 보여줬다가, 보여주지 않았다가 하는 제어로 사용 */}

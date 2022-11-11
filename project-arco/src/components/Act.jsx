@@ -19,7 +19,7 @@ const Act = () => {
     arrows: false,
     responsive: [
       {
-        breakpoint: 991,
+        breakpoint: 1199,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
@@ -28,7 +28,7 @@ const Act = () => {
         }
       },
       {
-        breakpoint: 575,
+        breakpoint: 804,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1

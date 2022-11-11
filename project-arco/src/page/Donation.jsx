@@ -23,10 +23,14 @@ const Donation = () => {
     <body>
       <div className="donation-background">
         <div className="pie-box">
-          <h1>Where did the donation go?</h1>
+          <div className="pie-text">
+            <h1>Where did the donation go?</h1>
+            <h2>Little help makes a big moves.</h2>
+          </div>
           <Pie />
         </div>
         <div className="submit-dona-box">
+          <h1>Donation Application</h1>
           <SubmitDonation />
         </div>
       <Footer />

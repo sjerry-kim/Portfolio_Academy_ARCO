@@ -1,6 +1,8 @@
 import { useEffect } from "react";
 import Footer from "../components/Footer";
 import SubmitVolunteerwork from "../components/SubmitVolunteerwork";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHouseMedical } from "@fortawesome/free-solid-svg-icons";
 
 const SafeCenter = () => {
 
@@ -20,8 +22,24 @@ const SafeCenter = () => {
   return (
     <body>
       <div className="safecenter-background">
+        <div className="safecenter-title">
         <h1>Safe Center</h1>
-        <SubmitVolunteerwork />
+          <div className="round-box">
+            <div className="round-div"></div>
+            <FontAwesomeIcon icon={faHouseMedical} style={{color:"#F7F6DC",fontSize:"2em", position:"relative",left: "23px", bottom:"56px"}} />
+          </div>
+        </div>
+        <h2>Abused animals stay in the center after being rescued.</h2>
+        <div className="safecenter-p">
+          <p>The center is managemented by minimal staffes.</p>
+          <p>So there are always understaffed.</p>
+          <p>The amimals miss the human touch.</p>
+          <p>Please be our volunteer.</p>
+        </div>
+        <div className="submit-vol-box">
+          <h1>Volunteer Application</h1>
+          <SubmitVolunteerwork />
+        </div>
         <Footer />
       </div>
     </body>

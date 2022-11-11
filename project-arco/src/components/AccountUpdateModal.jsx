@@ -24,8 +24,8 @@ function AccountUpdateModal() {
   }
 
   return (
-    <>
-      <Button variant="primary" onClick={handleShow}>
+    <div className='account-modal'>
+      <Button className='account-btn' variant="primary" onClick={handleShow}>
         Launch demo modal
       </Button>
 
@@ -66,7 +66,7 @@ function AccountUpdateModal() {
           </Button>
         </Modal.Footer>
       </Modal>
-    </>
+    </div>
   );
 }
 

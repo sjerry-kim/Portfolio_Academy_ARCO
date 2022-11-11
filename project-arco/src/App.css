@@ -468,7 +468,7 @@
 /*About*/
 .about-background{
   width: 100%;
-  height: 5200px;
+  height: 5300px;
   background-color: #ffffff;
   position: absolute; top: 100px; left: 0;
   z-index: 501;
@@ -500,7 +500,7 @@
 
 .act-box{
   background-color: #374b42;
-  height: 1300px;
+  height: 1500px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -825,7 +825,7 @@
 }
 
 .pie-box{
-  width: 100%;
+  width: 90%;
   height: 500px;
   margin: auto;
   display: flex;
@@ -833,27 +833,43 @@
   justify-content: center;
 }
 
-.pie-box h1{
+.pie-box .pie-text{
   width: 30%;
   padding: 0;
-  margin: 160px 0 0 0;
+  margin: 160px 0 0 100px;
+}
+
+.pie-text h1{
   font-size: 5em;
   color: #EFF5F5;
   text-align: start;
 }
 
+.pie-text h2{
+  font-size: 2em;
+  color: #EFF5F5;
+  text-align: start;
+  margin-top: 30px;
+}
+
 .pie-div{
-  width: 40%;
+  width: 45%;
   height: 100%;
-  margin: 200px 0;
+  margin: 13% 0 13% 2%;
 }
 
 .submit-dona-box{
-  width: 50%;
-  height: 600px;
-  margin: 400px auto;
+  width: 65%;
+  height: 800px;
+  margin: 380px auto;
   padding: 50px;
   background-color: rgba(0, 0, 0, 0.4);
+}
+
+.submit-dona-box h1{
+  font-size: 2.5em;
+  color: #EFEFEF;
+  margin-bottom: 50px;
 }
 
 .submit-dona-box .form-label{
@@ -864,6 +880,326 @@
   color: #EFEFEF;
 }
 
+/*Safe Center*/
+.safecenter-background{
+  width: 100%;
+  height: 2100px;
+  background: url(./img/running_dog.jpg);
+  background-size:cover;
+  background-attachment:scroll;
+  background-position: top right;
+  position: absolute; top: 100px; left: 0;
+  z-index: 501;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.safecenter-title{
+  text-align: start;
+
+}
+
+.safecenter-background h1{
+  display: inline-block;
+  width: 600px;
+  margin: 0;
+  color: #FFCB42;
+  font-weight: bold;
+  font-size: 7em;
+  margin-top: 50px;
+  margin-left: 50px;
+  text-align: start;
+}
+
+.safecenter-background h2{
+  color: #F7F6DC;
+  font-size: 3em;
+  margin-left: 50px;
+  text-align: start;
+}
+
+.safecenter-p{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin: 20px 0 0 50px;
+}
+
+.safecenter-p p{
+  color: #f5f4e3;
+  font-size: 1.5em;
+}
+
+.round-box{
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  top: 30px;
+  right: 40px;
+}
+
+.round-div{
+  width: 80px;
+  height: 80px;
+  margin: 0 ;
+  border: 1px solid #F7F6DC;
+  border-radius: 30%;
+  box-shadow: 0 0 5px #F7F6DC;
+  animation: round 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes round {
+  0% {transform: rotate(0deg);}
+  25% {transform: rotate(90deg);}
+  50% {transform: rotate(180deg);}
+  75% {transform: rotate(270deg);}
+  100% {transform: rotate(360deg);}
+}
+
+.submit-vol-box{
+  width: 80%;
+  height: 900px;
+  margin: 400px auto;
+  padding: 50px;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.submit-vol-box h1{
+  width: 100%;
+  font-size: 3em;
+  text-align: center;
+  margin: 0 auto 30px auto;
+  color: #EB6440;
+}
+
+/*Login*/
+.login-background{
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+
+/*Mypage : myprofile*/
+.mypage-background{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background-color: #D6E4E5;
+}
+
+.mypage-background .mypage-title{
+  font-style: italic;
+  font-weight: bold;
+  font-size: 8em;
+  color: rgba(73, 113, 116,0.6);
+  position: fixed;
+  top: 10px;
+  left: 60px;
+}
+
+.mypage-background .mypage-home-a{
+  height: 10px;
+  width: 100px;
+  margin: 0;
+  text-decoration: none;
+  color: #112B3C;
+  background-color: transparent;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 999;
+}
+
+.mypage-background .mypage-home-a:hover{
+  color: #EB6440;
+}
+
+.mypage-section{
+  width: 80%;
+  height: 85%;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background-color: #EFEFEF;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.mypage-nav{
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: auto;
+  margin-top: 145px ;
+  background-color: transparent;
+}
+
+.mypage-nav a{
+  text-decoration: none;
+  font-size: 1.3em;
+  color: #112B3C;
+  margin: 3px auto;
+  padding: 5px 7px;
+  width: 80%;
+}
+
+.mypage-nav a:hover{
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+  color:#112B3C ;
+}
+
+.profile-greet{
+  text-align: start;
+  padding: 20px 0 0 30px;
+}
+
+.profile-greet h1{
+  font-size: 3em;
+  font-weight: bold;
+  color: #112B3C;
+}
+
+.profile-greet h2{
+  margin: 15px 0 0 5px;
+  font-size: 1.8em;
+  color: #112B3C;
+}
+
+.profile-section{
+  display: flex;
+  flex-direction: row;
+}
+
+.profile-box{
+  width: 150px;
+  height: 150px;
+  margin: 50px;
+}
+
+.profile-box .profile-modal-btn{
+  background-color: #112B3C ;
+  border: none;
+  font-size: 1em;
+  margin-top: 10px;
+}
+
+.profile-box .profile-modal-btn:hover{
+  background-color: #264d66;
+}
+
+.profileInfo-box{
+  margin: 50px;
+  padding-top: 10px;
+}
+
+.profileInfo-box input{
+  background-color: white;
+  margin-bottom: 10px;
+}
+
+.my-dona-keep h1{
+  margin: 20px;
+  font-weight: bold;
+}
+
+.my-dona-keep h1 span{
+  font-style: italic;
+}
+
+.payment-table h3{
+  color: #112B3C;
+}
+
+.payment-table .table{
+  width: 80%;
+  margin: auto;
+}
+
+.account-box{
+  margin: 50px;
+}
+
+.payment-info input{
+  background-color: #ffffff;
+}
+
+.account-modal .account-btn{
+  background-color: #112B3C ;
+  border: none;
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+.account-modal .account-btn:hover{
+  background-color: #264d66;
+}
+
+.stop-dona .stop-dona-btn{
+  background-color: transparent;
+  border: none;
+  color: gray;
+  font-size: 1.1em;
+}
+
+.stop-dona .stop-dona-btn:hover{
+  background-color: transparent;
+  border: none;
+  color: gray;
+  font-size: 1.1em;
+  font-style: italic;
+}
+
+
+/*Mypage : questions*/
+.counselor-box{
+  width: 100%;
+  display: flex;
+
+}
+
+.counselor-profile{
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 2px 2px;
+  margin: 20px 8px 20px 15px;
+  border-radius: 50%;
+  color: white;
+  background-color: #D6E4E5;
+}
+
+.counselor-p{
+  width:fit-content;
+  height: 30px;
+  text-align: center;
+  padding: 2px 20px;
+  margin: 20px 15px 20px 0;
+  background-color: ivory;
+  border-radius: 20px;
+}
+
+.user-box{
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px 25px 20px 0;
+}
+
+.user-p{
+  width:fit-content;
+  height: 30px;
+  text-align: center;
+  padding: 2px 20px;
+  background-color: lightcyan;
+  border-radius: 20px;
+}
 
 @media screen and (max-width: 1608px){
   .matching-cards{
@@ -881,12 +1217,21 @@
   }
 }
 
-@media screen and (max-width: 1399px){
-  .act-box .container{
-    margin: 20px auto;
-    width: 1200px;
+@media screen and (max-width: 1482px){
+  .pie-text h1{
+    font-size: 4em;
   }
   
+  .pie-text h2{
+    font-size: 1.8em;
+  }
+
+  .pie-div{
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 1399px){
   .slider-div{
     width: 350px;
     height: 450px;
@@ -896,6 +1241,12 @@
   .act-box .slick-slider img{
     width: 350px;
     height: 450px;
+  }
+
+  .act-box .slick-slider h2{
+    font-size: 1.8em;
+    width: 5%;
+    margin-left: 40px;
   }
 }
 
@@ -918,29 +1269,75 @@
     padding: 5px;
   }
 
+  .pie-div{
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 1199px){
   .act-box .container{
-    margin: 20px auto;
-    width: 930px;
-    overflow: hidden;
-  }
-  
-  .slider-div{
-    width: 250px;
-    height: 350px;
-    margin: 0 3px;
-  }
-  
-  .act-box .slick-slider img{
-    width: 250px;
-    height: 350px;
+    width: 850px;
   }
 
   .act-box .slick-slider h2{
     width: 5%;
-    font-size: 1.6em;
-    margin-left: 30px;
+    bottom: 2%;
+    margin-left: 40px;
   }
 
+  .pie-box{
+    height: 900px;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .pie-box .pie-text{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 100px 0 0 0;
+  }
+
+  .pie-text h1{
+    text-align: center;
+  }
+  
+  .pie-text h2{
+    text-align: center;
+  }
+
+  .pie-div{
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .submit-dona-box{
+    margin: auto;
+  }
+
+  .safecenter-background h1{
+    width: 450px;
+    color: #FFCB42;
+    font-size: 5em;
+  }
+
+  .safecenter-background h2{
+    font-size: 2.5em;
+  }
+
+  .safecenter-p p{
+    font-size: 1.3em;
+  }
+
+  .submit-vol-box h1{
+    font-size: 2.5em;
+    color: #EB6440;
+  }
 }
 
 @media screen and (max-width: 1037px){
@@ -1028,6 +1425,61 @@
   .matching-cards .card-body{
     padding: 10px;
   }
+
+  .slider-div{
+    width: 330px;
+    height: 430px;
+    margin: 0 auto;
+  }
+  
+  .act-box .slick-slider img{
+    margin: auto;
+    width: 330px;
+    height: 430px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .act-box .slick-slider h2{
+    font-size: 1.8em;
+    width: 5%;
+    margin-left: 43px;
+  }
+
+  .pie-box{
+    margin-top: 150px;
+    height: 480px;
+  }
+
+  .pie-text h1{
+    font-size: 3em;
+  }
+  
+  .pie-text h2{
+    font-size: 1.8em;
+  }
+
+  .pie-div{
+    margin-top: 50px;
+  }
+
+  .submit-dona-box{
+    margin: 280px auto;
+  }
+
+  .submit-vol-box h1{
+    font-size: 2em;
+    color: #EB6440;
+  }
+
+  .mypage-section{
+    width: 70%;
+  }
+
+  .mypage-nav{
+    width: 30%;
+  }
+
 }
 
 @media screen and (max-width: 804px){
@@ -1045,6 +1497,33 @@
   .matching-cards .card-body{
     padding: 15px;
   }
+
+  .act-box .container{
+    width: 800px;
+  }
+
+  .act-box .slick-slider h2{
+    font-size: 1.6em;
+    width: 5%;
+    margin-left: 200px;
+  }
+
+  .pie-box{
+    height: 450px;
+  }
+
+  .pie-text h1{
+    font-size: 3em;
+  }
+  
+  .pie-text h2{
+    font-size: 1.6em;
+  }
+
+  .pie-div{
+    width: 500px;
+  }
+
 }
 
 @media screen and (max-width: 768px){
@@ -1134,14 +1613,6 @@
     font-size: 2em;
   }
 
-  .act-box h1{
-    font-size: 3em;
-  }
-
-  .act-box .slick-slider img{
-    height: 500px;
-  }
-
   .article-header h1{
     font-size: 2.8em;
   }
@@ -1180,6 +1651,67 @@
     width: 130px;
     height: 60%;
   }
+
+  .act-box .container{
+    width: 430px;
+  }
+
+  .act-box .slick-slider h2{
+    font-size: 1.6em;
+    width: 5%;
+    margin-left: 50px;
+  }
+
+  .safecenter-background h1{
+    width: 380px;
+    color: #FFCB42;
+    font-size: 4em;
+  }
+
+  .safecenter-background h2{
+    font-size: 2.3em;
+  }
+
+  .safecenter-p p{
+    font-size: 1.2em;
+  }
+
+  .submit-vol-box{
+    width: 80%;
+  }
+
+  .submit-vol-box h1{
+    width: 70%;
+    font-size: 2em;
+    color: #EB6440;
+  }
+}
+
+@media screen and (max-width: 687px){
+  .profile-section{
+    flex-direction: column;
+  }
+
+  .profile-box{
+    margin-left: 35px;
+  }
+
+  .profileInfo-box{
+    margin-top: 20px;
+    margin-left: 15px;
+  }
+
+  .profile-greet h1{
+    font-size: 2.3em;
+  }
+  
+  .profile-greet h2{
+    font-size: 1.3em;
+  }
+
+  .profileInfo-box label{
+    margin-left: 30px;
+  }
 }
 
 @media screen and (max-width: 629px){
@@ -1190,6 +1722,30 @@
   .matching-cards .card{
     margin: 7px 30px;
   }
+
+  .pie-box{
+    margin-top: 100px;
+    height: 450px;
+  }
+
+  .pie-text h1{
+    font-size: 2.5em;
+  }
+  
+  .pie-text h2{
+    font-size: 1.4em;
+  }
+
+  .pie-div{
+    width: 450px;
+  }
+
+  .submit-dona-box{
+    margin: 320px auto;
+  }
+
+  .submit-vol-box{
+    width: 90%;}
 }
 
 
@@ -1246,27 +1802,11 @@
     font-size: 1.5em;
   }
 
-  .about-background{
-    height: 5000px;
-  }
-
   .first-sentence{
     font-size: 2em;
   }
 
   .second-sentence{
-    font-size: 1.5em;
-  }
-
-  .act-box h1{
-    font-size: 2.5em;
-  }
-
-  .act-box .slick-slider img{
-    height: 500px;
-  }
-
-  .act-box .slick-slider h2{
     font-size: 1.5em;
   }
 
@@ -1308,8 +1848,8 @@
     margin-top: 0;
   }
 
-  .adoption-app h1{
-    font-size: 1.9em;
+  .round-box{
+    display: none;
   }
 
 }
@@ -1360,121 +1900,23 @@
     font-size: 1.8em;
   }
 
-}
+  .act-box .container{
+    width: 280px;
+  }
 
+  .act-box .slick-slider h2{
+    font-size: 1.6em;
+    width: 5%;
+    margin-left: 50px;
+  }
 
-/*Safe Center*/
-.safecenter-background{
-  width: 100%;
-  height: 2000px;
-  background: url(./img/running_dog.jpg);
-  background-size:cover;
-  background-attachment:scroll;
-  background-position: top right;
-  position: absolute; top: 100px; left: 0;
-  z-index: 501;
-  font-family: 'Noto Sans KR', sans-serif;
-  font-family: 'Roboto Condensed', sans-serif;
-}
-
-/*Login*/
-.login-background{
-  width: 100%;
-  height: 100%;
-  background-color: #ffffff;
-  display: flex;
-  justify-content: center;
-}
-
-/*Mypage : myprofile*/
-.profile-greet{
-  text-align: start;
-  padding: 20px 0 0 30px;
-}
-
-.profile-greet h1{
-  font-size: 3em;
-  font-weight: bold;
-}
-
-.profile-greet h2{
-  margin: 15px 0 0 5px;
-  font-size: 1.8em;
-}
-
-.mypage-background{
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  background-color: #B8C5B6;
-}
-
-.mypage-nav{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 20%;
-  height: auto;
-  margin-top: 300px ;
-  background-color: transparent;
-}
-
-.profile-section{
-  display: flex;
-  flex-direction: row;
-}
-
-.profile-box{
-  width: 150px;
-  height: 150px;
-  margin: 50px;
-}
-
-.profileInfo-box{
-  margin: 50px;
-  padding-top: 10px;
-}
-
-/*Mypage : questions*/
-.counselor-box{
-  width: 100%;
-  display: flex;
-
-}
-
-.counselor-profile{
-  width: 30px;
-  height: 30px;
-  text-align: center;
-  padding: 2px 2px;
-  margin: 20px 8px 20px 15px;
-  border-radius: 50%;
-  color: white;
-  background-color: #D6E4E5;
-}
-
-.counselor-p{
-  width:fit-content;
-  height: 30px;
-  text-align: center;
-  padding: 2px 20px;
-  margin: 20px 15px 20px 0;
-  background-color: ivory;
-  border-radius: 20px;
-}
-
-.user-box{
-  display: flex;
-  justify-content: flex-end;
-  margin: 20px 25px 20px 0;
-}
-
-.user-p{
-  width:fit-content;
-  height: 30px;
-  text-align: center;
-  padding: 2px 20px;
-  background-color: lightcyan;
-  border-radius: 20px;
+  .slider-div{
+    width: 250px;
+    height: 350px;
+  }
+  
+  .act-box .slick-slider img{
+    width: 250px;
+    height: 350px;
+  }
 }

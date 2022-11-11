@@ -19,13 +19,13 @@ const Pie = () => {
       <ResponsivePie
         /* chart에 사용될 데이터 */
         data={[
-          { id: 'Safe Center', value: 69 },
+          { id: 'Safe Center', value: 68 },
           { id: `Volunteer Work`, value: 21 },
-          { id: 'Management', value: 10 },
+          { id: 'Management', value: 11 },
         ]}
 
         /* chart margin */
-        margin={{ top: 30, right: 95, bottom: 30, left: 130 }}
+        margin={{ top: 10, right: 150, bottom: 60, left: 150 }}
 
         /* chart 중간 빈공간 반지름 */
         innerRadius={0.5}
@@ -37,12 +37,12 @@ const Pie = () => {
         cornerRadius={5}
               
         /* chart 색상 */
-        colors={['lightblue', 'lightcoral', 'lemonchiffon']} // 커스터하여 사용할 때
+        colors={['#C9BBCF', '#B7D3DF', '#D6EFED']} // 커스터하여 사용할 때
               
         // colors={{ scheme: 'nivo' }} // nivo에서 제공해주는 색상 조합 사용할 때
               
         /* pad border 두께 설정 */
-        borderWidth={2.3}
+        borderWidth={2}
 
         /* link label skip할 기준 각도 */
         arcLinkLabelsSkipAngle={0}
@@ -51,7 +51,7 @@ const Pie = () => {
         arcLinkLabelsTextColor="#EFEFEF"
               
         /* link label 연결되는 선 두께 */
-        arcLinkLabelsThickness={2}
+        arcLinkLabelsThickness={1.8}
 
         /* link label 연결되는 선 색상 */
         arcLinkLabelsColor={{ from: 'color' }} // pad 색상에 따라감
@@ -63,7 +63,7 @@ const Pie = () => {
                 /* label style (pad에 표현되는 글씨) */
                 labels: {
                   text: {
-                          fontSize: 12,
+                          fontSize: 14,
                           fill: '#112B3C',
                         },
                       },
