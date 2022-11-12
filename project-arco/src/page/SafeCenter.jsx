@@ -26,7 +26,7 @@ const SafeCenter = () => {
         <h1>Safe Center</h1>
           <div className="round-box">
             <div className="round-div"></div>
-            <FontAwesomeIcon icon={faHouseMedical} style={{color:"rgba(255, 251, 215, 0.7)",fontSize:"2em", position:"relative",left: "23px", bottom:"56px"}} />
+            <a href="/safecenter"><FontAwesomeIcon icon={faHouseMedical} /></a>
           </div>
         </div>
         <h2>Abused animals stay in the center after being rescued.</h2>

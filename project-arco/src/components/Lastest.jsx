@@ -8,7 +8,7 @@ const Lastest = () => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 700,
+    speed: 400,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,

@@ -27,9 +27,8 @@ const MyDonationKeep = () => {
 
   return (
     <div className="my-dona-keep">
-      <h1>You Donate totals 
-        <span> {totalF}$
-        </span>!
+      <h1>You Donate totals {" "}
+        <span>{totalF}$</span>!
       </h1>
       <PaymentTable />
       <div className="account-box">

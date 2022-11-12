@@ -1,12 +1,9 @@
-import { useState } from "react";
-import { useEffect } from "react";
 import { useContext } from "react";
 import DataContext from "../context/DataContext";
 import QuestionTextarea from "./QuestionTextarea";
 
 const Questions = () => {
-  const {state, action} = useContext(DataContext);
-  const [questions, setQuestions] = useState()
+  const {state} = useContext(DataContext);
 
   return ( 
     <div className="question-div">
@@ -15,7 +12,7 @@ const Questions = () => {
           <div className="counselor-box">
             <div className="counselor-profile">C</div>
             <div className="counselor-p">
-              <p>Please wait 2-3 days for the answers :) aaaaaaaaaaaaa</p>
+              <p>Please wait 2-3 days for the answers :)</p>
             </div>
           </div>
           {

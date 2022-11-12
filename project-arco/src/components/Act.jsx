@@ -8,7 +8,7 @@ import { useNavigate } from "react-router-dom";
 
 const Act = () => {
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 3,
@@ -16,7 +16,8 @@ const Act = () => {
     autoplay: true,
     autoplaySpeed: 3000,
     cssEase: "linear",
-    arrows: false,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
     responsive: [
       {
         breakpoint: 1199,
@@ -53,6 +54,12 @@ const Act = () => {
       url: "/donation"},
   ]
 
+  /*
+  const lightText = () => {
+    document.querySelector(".act-box .slick-slider h2").style.textShadow = "0 0 5px lemonchiffon";
+  }
+  */
+
   const navigate= useNavigate();
   
   return (
@@ -64,9 +71,11 @@ const Act = () => {
             <Slider {...settings}>
               {
                 actCards.map((cards, index)=>(
-                  <div className="slider-div" key={index}>
-                    <img src={require(`../img/${cards.img}`)} onClick={()=>{ navigate(cards.url); window.scrollTo(0,0)}} /* 보수 ! *//>
-                    <h2>{cards.title}</h2>
+                  <div className="slider-div" key={index} 
+                    onClick={()=>{ navigate(cards.url); window.scrollTo(0,0)}}
+                    /*onMouseOver={()=>{lightText()}}*/>
+                    <img src={require(`../img/${cards.img}`)}/>
+                    <h2 className="slider-text">{cards.title}</h2>
                   </div>
                 ))
               }
@@ -79,3 +88,22 @@ const Act = () => {
 }
 
 export default Act;
+
+function SampleNextArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <FontAwesomeIcon icon={faChevronRight} 
+    className={className}
+    onClick={onClick}
+    style={{color: "rgba(239, 239, 239, 0.3)", margin: "0"}}/>
+  );
+}
+function SamplePrevArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <FontAwesomeIcon icon={faChevronLeft} 
+    className={className}
+    onClick={onClick}
+    style={{color: "rgba(239, 239, 239, 0.3)",  margin: "0"}}/>
+  );
+}

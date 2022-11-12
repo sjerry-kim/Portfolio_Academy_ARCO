@@ -7,6 +7,7 @@ import { useContext } from 'react';
 import DataContext from '../context/DataContext';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCamera } from "@fortawesome/free-solid-svg-icons";
+import { useEffect } from 'react';
 
 
 function ProfileUpdateModal() {
@@ -48,7 +49,9 @@ function ProfileUpdateModal() {
         <Modal.Body>
           {/* 추가된 사진 미리보기 */}
           <div className='preview' ref={imgShow}>
-          <FontAwesomeIcon icon={faCamera} style={{color:"#ffffff",fontSize:"3em"}} />
+            {
+              imgShow.current? (""):(<FontAwesomeIcon icon={faCamera} style={{color:"#ffffff",fontSize:"3em"}} />)
+            }
           </div>
           {/* 사진 파일을 받아올 input 태그 가져오기 */}
           <Form.Group controlId="formFile" className="mb-3">

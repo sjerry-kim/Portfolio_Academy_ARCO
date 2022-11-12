@@ -20,8 +20,7 @@ function SubmitVolunteerwork() {
   };
 
   return (
-    <Form style={{display: "flex", flexDirection: "column", alignItems: "center"}} 
-      noValidate validated={validated} onSubmit={handleSubmit}>
+    <Form className='vol-app-form' noValidate validated={validated} onSubmit={handleSubmit}>
       <Row className="mb-3" style={{width: "200px"}}>
         <Form.Group as={Col} controlId="validationCustom01">
           <Form.Label>First name</Form.Label>
@@ -33,6 +32,7 @@ function SubmitVolunteerwork() {
           <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
         </Form.Group>
         </Row>
+
         <Row className="mb-3" style={{width: "200px"}}>
         <Form.Group as={Col} controlId="validationCustom02">
           <Form.Label>Last name</Form.Label>
@@ -44,6 +44,7 @@ function SubmitVolunteerwork() {
           <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
         </Form.Group>
         </Row>
+
         <Row className="mb-3" style={{width: "200px"}}>
         <Form.Group as={Col} controlId="validationCustom02">
           <Form.Label>Birth date</Form.Label>
@@ -55,6 +56,7 @@ function SubmitVolunteerwork() {
           <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
         </Form.Group>
         </Row>
+
         <Row className="mb-3" style={{width: "300px"}} >
           <Form.Group as={Col} controlId="validationCustom03">
               <Form.Label>Email</Form.Label>
@@ -64,6 +66,7 @@ function SubmitVolunteerwork() {
               </Form.Control.Feedback>
             </Form.Group>
         </Row>
+
         <Row className="mb-3" style={{width: "300px"}}>
           <Form.Group as={Col} controlId="validationCustom04">
               <Form.Label>Phone number</Form.Label>
@@ -73,11 +76,12 @@ function SubmitVolunteerwork() {
               </Form.Control.Feedback>
             </Form.Group>
         </Row>
+
         {/* 여기서부터!!!!!!! */}
-        <Row className="m-3 mb-4" style={{width: "500px"}}>
+        <Row className="m-3" style={{width: "480px"}}>
           <Form.Group as={Col} controlId="validationCustom05">
               <Form.Label>Check the day (Duplicate selection available)</Form.Label>
-              <InputGroup style={{diplay:"flex", flexDirection: "row", justifyContent: "center"}}>
+              <InputGroup className='input-day' style={{diplay:"flex", flexDirection: "row", justifyContent: "center"}}>
                 <Form.Check style={{width:"80px", display:"inline-block", marginRight: "20px"}} id={`sunday`} label={`Sunday`}/>
                 <Form.Check style={{width:"80px", display:"inline-block", marginRight: "20px"}} id={`monday`} label={`Monday`}/>
                 <Form.Check style={{width:"80px", display:"inline-block", marginRight: "20px"}} id={`tuesday`} label={`Tuesday`}/>
@@ -88,10 +92,11 @@ function SubmitVolunteerwork() {
               </InputGroup>
             </Form.Group>
         </Row>
-        <Row className="m-3 mb-4" style={{width: "500px"}}>
+
+        <Row className="m-3 mb-4" style={{width: "330px"}}>
           <Form.Group as={Col} controlId="validationCustom05">
               <Form.Label>Check the day (Duplicate selection available)</Form.Label>
-              <InputGroup style={{diplay:"flex", flexDirection: "row", justifyContent: "center"}}>
+              <InputGroup className='input-time' style={{diplay:"flex", flexDirection: "row", justifyContent: "center"}}>
                 <Form.Check style={{width:"80px", display:"inline-block", marginRight: "80px"}} id={`Morning`} label={`Morning `}/>
                 <Form.Check style={{width:"80px", display:"inline-block", marginRight: "0px"}} id={`Afternoon`} label={`Afternoon`}/>
               </InputGroup>
@@ -107,7 +112,7 @@ function SubmitVolunteerwork() {
           feedbackType="invalid"
         />
       </Form.Group>
-      <Button type="submit">Submit form</Button>
+      <button className='vol-app-btn' type="submit">Submit form</button>
     </Form>
   );
 }

@@ -24,7 +24,7 @@ const About = () => {
         if (percentage>=1 && percentage<10){
           document.querySelector(".first-sentence").style.opacity = "0"
           
-        }else if(percentage>=53 ){
+        }else if(percentage>=57 ){
           document.querySelector(".second-sentence").style.opacity = "0"
         }
         else{

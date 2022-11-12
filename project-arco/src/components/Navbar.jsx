@@ -36,15 +36,15 @@ const Navbar = () => {
   return (
     <div className="glb-header" >
       <div className="glb-title">
-        <Link to='/' element={<Home />}>
+        <Link to='/' element={<Home />}  onClick="window.scrollTo(0,0);">
           <FontAwesomeIcon icon={faShieldDog}/>
           ARCO
         </Link>
       </div>
       <nav className="glb-nav">
-        <NavLink to='/about' element={<About />}>About Us</NavLink>
-        <NavLink to='/donation' element={<Donation />}>Donation</NavLink>
-        <NavLink to='/safecenter' element={<SafeCenter />}>Safe Center</NavLink>
+        <NavLink to='/about' element={<About />} onClick="window.scrollTo(0,0);">About Us</NavLink>
+        <NavLink to='/donation' element={<Donation />} onClick="window.scrollTo(0,0);">Donation</NavLink>
+        <NavLink to='/safecenter' element={<SafeCenter />} onClick="window.scrollTo(0,0);">Safe Center</NavLink>
       </nav>
       <div className="glb-login">
           {

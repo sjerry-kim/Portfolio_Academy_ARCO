@@ -75,7 +75,7 @@ function SubmitDontion() {
           feedbackType="invalid"
         />
       </Form.Group>
-      <Button type="submit">Submit form</Button>
+      <button className='sub-dona-btn' type="submit">Submit form</button>
     </Form>
   );
 }

@@ -1,29 +1,25 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTwitter, faInstagram, faYoutube, faFacebook} from "@fortawesome/free-brands-svg-icons";
+import { faCommentDots } from "@fortawesome/free-solid-svg-icons";
+
 const Footer = () => {
   return (
     <div className="footer">
-      <p>
-      재단법인 한국세계자연기금
-
-대표자
-홍정욱
-고유번호
-101-82-23485
-주소
-서울특별시 종로구 종로 47 (공평동) SC제일은행본점빌딩 15층 (재) 한국세계자연기금
-대표전화
-02-722-1601
-후원 문의
-members@wwfkorea.or.kr
-기업 문의
-partnership@wwfkorea.or.kr
-홍보 및 마케팅 문의
-marketing@wwfkorea.or.kr
-기타 문의
-info@wwfkorea.or.kr
-© 2021 WWF – World Wide Fund For Nature (also known as World Wildlife Fund). Creative Commons licence.
-      </p>
+      <div className="footer-p">
+        <p>ANIMAL RIGHTS COEXITENCE ORGANIZATION. ARCO</p>
+        <p>TEL : 000-000-0000 {" "} | FAX : 0000-000-0000</p>
+        <p>EMAIL : 00000@00000.com</p>
+        <p>&copy; 2022 ARCO. ALL RIGTHS RESERVED</p>
+      </div>
+      <div className="footer-icon">
+        <a href="https://twitter.com/?lang=ko" target="_blank"><FontAwesomeIcon icon={faTwitter} /></a>
+        <a href="https://www.instagram.com/" target="_blank"><FontAwesomeIcon icon={faInstagram} /></a>
+        <a href="https://www.youtube.com/" target="_blank"><FontAwesomeIcon icon={faYoutube} /></a>
+        <a href="https://ko-kr.facebook.com/" target="_blank"><FontAwesomeIcon icon={faFacebook} /></a>
+        <a href="https://www.kakaocorp.com/page/service/service/KakaoTalk" target="_blank"><FontAwesomeIcon icon={faCommentDots} /></a>
+      </div>
     </div>
   );
 }
- 
+
 export default Footer;

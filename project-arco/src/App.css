@@ -70,6 +70,10 @@
   color: #2C3D4F;
 }
 
+.glb-title a:hover{
+  color: #2C3D4F;
+}
+
 .glb-title a path{
   color: #2C3D4F;
 }
@@ -86,6 +90,10 @@
   padding-left: 10px;
   color: #2C3D4F;
   margin-right: 50px;
+}
+
+.glb-nav a:hover{
+  color: #E14D2A;
 }
 
 .glb-login{
@@ -165,11 +173,18 @@
   color: #ffffff;
   text-decoration: none;
   font-weight: 100px;
+  animation: changeSize 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes changeSize {
+  0%{font-size: 1.1em;}
+  50%{font-size: 1.17em;}
+  100%{font-size: 1.1em;}
 }
 
 .box-link a:hover{
   color: #2C3D4F;
-  text-shadow: 0px 0px 3px lemonchiffon ;
 }
 
 .home-main{
@@ -222,8 +237,12 @@
 .side-title a{
   text-decoration: none;
   font-weight: bold;
-  color: #EB6440;
-  text-shadow: 0 0 3px black;
+  color: #E14D2A;
+  text-shadow: 0 0 1px black;
+}
+
+.side-title a:hover{
+  color: #E14D2A;
 }
 
 .side-nav{
@@ -239,12 +258,10 @@
   margin: 8px;
   color: #ffffff;
   font-size: 1.2em;
-  text-shadow: 0 0 3px black;
 }
 
 .side-nav a:hover{
-  color: #EB6440;
-  text-shadow: 0 0 1px lemonchiffon;
+  color: #FFF6BF;
 }
 
 .side-login{
@@ -257,12 +274,10 @@
   border: none;
   background-color: transparent;
   font-size: 1.2em;
-  text-shadow: 0 0 3px black;
 }
 
 .side-login button:hover{
-  color: #EB6440;
-  text-shadow: 0 0 1px lemonchiffon;
+  color: #FFF6BF;
 }
 
 .lastest-box{
@@ -283,6 +298,11 @@
   margin: auto;
   object-fit: cover; 
   object-position: top center;
+}
+
+.lastest-box .slick-dots{
+  position: relative;
+  top: 15px
 }
 
 .lastest-box .discover-box{
@@ -326,23 +346,28 @@
 
 .donation-box{
   height: 250px;
-  background-color: #f66b0ee8;
+  background-color: #F66B0E;
   padding: 40px;
 }
 
 .donation-box h1{
-  font-size: 1.8em;
-  margin: 15px 0 9px 0;
+  font-size: 2em;
+  margin: 13px 0 13px 0;
   font-weight: 500;
   color: white;
 }
 
 .donation-box a{
   text-decoration: none;
-  font-size: 2.8em;
+  font-size: 3.3em;
   font-weight: bold;
-  color: #2C3D4F;
+  color: #FFEBAD;
   margin-bottom: 50px;
+}
+
+.donation-box a:hover{
+  color: #FFF6BF;
+  font-size: 3.5em;
 }
 
 .quiz-box{
@@ -385,8 +410,8 @@
 }
 
 .quiz-radio-box .form-check:hover{
-  color: #497174;
-  font-style: italic;
+  color: #E14D2A;
+  font-size: 1.6em;
 }
 
 .quiz-box button{
@@ -458,11 +483,39 @@
   background-color: #2C3D4F;
   width: 100%;
   height: 200px;
+  padding: 45px;
   position: absolute; bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.footer p{
-  color: #ffffff;
+.footer-p{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-p p{
+  font-size: 0.9em;
+  color: #EFEFEF;
+  margin: 3px;
+}
+
+.footer-icon{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.footer-icon a svg{
+  font-size: 150%;
+  margin: 0 10px;
+  color: #EFEFEF;
+}
+
+.footer-icon a svg:hover{
+  color: #d5d4d4;
 }
 
 /*About*/
@@ -486,20 +539,20 @@
 }
 
 .second-sentence-box{
-  background: linear-gradient(white,#6D9886, #374b42);
-  padding-top: 1500px;
-  padding-bottom: 1000px;
+  background: linear-gradient(white,#F0EBCE, #4E6C50 ,#395144);
+  padding-top: 1700px;
+  padding-bottom: 800px;
 }
 
 .second-sentence{
   color: white;
-  font-size: 2.5em;
+  font-size: 2.8em;
   transition: opacity 0.7s; 
   transition-delay: 0.1s;
 }
 
 .act-box{
-  background-color: #374b42;
+  background-color: #395144;
   height: 1500px;
   display: flex;
   flex-direction: column;
@@ -510,7 +563,7 @@
   font-size: 3.8em;
   font-weight: bold;
   margin: 400px 0 30px 0;
-  color: #EFF5F5;
+  color: #ffffff;
 }
 
 .act-box .container{
@@ -530,20 +583,34 @@
   height: 500px;
   object-fit: cover;
   object-position: center;
+  transition: width 0.5s;
+}
+
+.act-box .slick-slider img:hover{
+  width: 410px;
+  border: 5px solid rgba(255, 246, 191, 0.9);
 }
 
 .act-box .slick-slider h2{
   width: 8%;
   font-size: 2em;
-  color: #ffffff;
+  color: #EFEFEF;
   position: fixed;
   bottom: 3%;
   text-align: left;
   margin-left: 25px;
 }
 
+/*
 .act-box .slick-slider h2:hover{
   text-shadow: 0 0 5px lemonchiffon;
+}
+*/
+
+.act-box .slick-dots{
+  width: auto;
+  position: relative;
+  top: 15px;
 }
 
 .publishing-background{
@@ -558,8 +625,12 @@
 }
 
 .article-header h1{
-  margin: 15px 20px;
-  font-size: 3.3em;
+  margin: 15px;
+  font-size: 3.5em;
+  font-weight: bold;
+  color: #112B3C;
+  font-style: italic;
+  text-align: start;
 }
 
 .article-header a{
@@ -567,8 +638,13 @@
   color: black;
 }
 
+.article-header a:hover{
+  color: #EB6440;
+}
+
 .article-main h1{
-  font-size: 3.5em;
+  font-weight: bold;
+  font-size: 3.3em;
 }
 
 .article-section{
@@ -810,6 +886,26 @@
   color: #112B3C;
 }
 
+.adopt-app-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.adopt-app-form button{
+  background-color: #112B3C;
+  font-size: 1.3em;
+  color: #EFEFEF;
+  padding: 8px 20px;
+  margin-top: 40px;
+  border-radius: 10px;
+  border: none;
+}
+
+.adopt-app-form button:hover{
+  background-color: #071925;
+}
+
 /*Donation*/
 .donation-background{
   width: 100%;
@@ -843,13 +939,14 @@
   font-size: 5em;
   color: #EFF5F5;
   text-align: start;
+  font-weight: bold;
 }
 
 .pie-text h2{
   font-size: 2em;
   color: #EFF5F5;
   text-align: start;
-  margin-top: 0px;
+  margin-top: 15px;
 }
 
 .pie-div{
@@ -867,8 +964,9 @@
 }
 
 .submit-dona-box h1{
-  font-size: 2.5em;
-  color: #EFEFEF;
+  font-size: 2.8em;
+  font-weight: bold;
+  color: #ddd5e0;
   margin-bottom: 50px;
 }
 
@@ -880,10 +978,24 @@
   color: #EFEFEF;
 }
 
+.submit-dona-box .sub-dona-btn{
+  background-color: #B6D3DF;
+  font-size: 1.3em;
+  color: #0d2371;
+  padding: 8px 20px;
+  margin-top: 40px;
+  border-radius: 10px;
+  border: none;
+}
+
+.submit-dona-box .sub-dona-btn:hover{
+  background-color: #9dbdcb;
+}
+
 /*Safe Center*/
 .safecenter-background{
   width: 100%;
-  height: 2100px;
+  height: 2250px;
   background: url(./img/running_dog.jpg);
   background-size:cover;
   background-attachment:scroll;
@@ -939,6 +1051,25 @@
   right: 40px;
 }
 
+.round-box a{
+  position: relative;
+  left: 23px;
+  bottom: 56%;
+}
+
+.round-box a svg{
+  color: rgba(255, 251, 215, 0.7);
+  font-size: 2em;
+  animation: changeColor 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes changeColor{
+  0%{color: rgba(255, 251, 215, 0.7);}
+  50%{color: rgba(255, 251, 215, 1)}
+  100%{color: rgba(255, 251, 215, 0.7);}
+}
+
 .round-div{
   width: 80px;
   height: 80px;
@@ -946,7 +1077,7 @@
   border: 1px solid #F7F6DC;
   border-radius: 30%;
   box-shadow: 0 0 10px #F7F6DC;
-  animation: round 5s;
+  animation: round 4s;
   animation-iteration-count: infinite;
 }
 
@@ -960,7 +1091,7 @@
 
 .submit-vol-box{
   width: 80%;
-  height: 900px;
+  height: 1040px;
   margin: 400px auto;
   padding: 50px;
   background-color: rgba(255, 255, 255, 0.25);
@@ -972,6 +1103,38 @@
   text-align: center;
   margin: 0 auto 30px auto;
   color: #EB6440;
+}
+
+.vol-app-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.vol-app-form .input-day{
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 10px;
+  padding: 8px;
+}
+
+.vol-app-form .input-time{
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 10px;
+  padding: 8px;
+}
+
+.vol-app-form .vol-app-btn{
+  background-color: #1A4D2E;
+  font-size: 1.3em;
+  color: #FFCB42;
+  padding: 8px 20px;
+  margin-top: 40px;
+  border-radius: 10px;
+  border: none;
+}
+
+.vol-app-form .vol-app-btn:hover{
+  background-color: #103720;
 }
 
 /*Login*/
@@ -1122,13 +1285,14 @@
 }
 
 .my-dona-keep h1{
-  margin: 20px;
-  font-size: 2em;
+  margin: 30px;
+  font-size: 2.8em;
   font-weight: bold;
 }
 
 .my-dona-keep h1 span{
   font-style: italic;
+  text-decoration-line: underline;
 }
 
 .my-dona-pause{
@@ -1153,17 +1317,28 @@
   background-color: #396d90;
 }
 
+.payment-table{
+  margin: 35px auto;
+}
+
 .payment-table h3{
+  font-weight: bold;
   color: #112B3C;
+  margin-bottom: 15px;
 }
 
 .payment-table .table{
   width: 60%;
   margin: auto;
+  border: 1px solid darkgray;
 }
 
 .account-box{
   margin-top: 50px;
+}
+
+.payment-info h3{
+  font-weight: bold;
 }
 
 .payment-info input{
@@ -1173,8 +1348,8 @@
 .account-modal .account-btn{
   background-color: #112B3C ;
   border: none;
-  font-size: 1.2em;
-  margin-top: 10px;
+  font-size: 1em;
+  margin-top: 5px;
 }
 
 .account-modal .account-btn:hover{
@@ -1186,7 +1361,7 @@
   border: none;
   color: gray;
   font-size: 1.1em;
-  margin-top: 20px;
+  margin-top: 50px;
   margin-bottom: 30px;
 }
 
@@ -1307,6 +1482,11 @@
   .act-box .slick-slider img{
     width: 350px;
     height: 450px;
+  }
+
+  .act-box .slick-slider img:hover{
+    width: 355px;
+    border: 5px solid rgba(255, 246, 191, 0.9);
   }
 
   .act-box .slick-slider h2{
@@ -1511,6 +1691,11 @@
     object-position: center;
   }
 
+  .act-box .slick-slider img:hover{
+    width: 335px;
+    border: 5px solid rgba(255, 246, 191, 0.9);
+  }
+
   .act-box .slick-slider h2{
     font-size: 1.8em;
     width: 5%;
@@ -1594,6 +1779,10 @@
   .pie-div{
     width: 500px;
     height: 300px;
+  }
+
+  .my-dona-keep h1{
+    font-size: 2em;
   }
 
 }
@@ -1794,6 +1983,12 @@
   .profileInfo-box label{
     margin-left: 30px;
   }
+
+  .footer{
+    padding: 20px;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
 
 @media screen and (max-width: 629px){
@@ -1828,6 +2023,10 @@
 
   .submit-vol-box{
     width: 90%;}
+
+  .article-header a{
+    font-size: 0.8em;
+  }
 }
 
 
@@ -1932,6 +2131,10 @@
 
   .round-box{
     display: none;
+  }
+
+  .article-header a{
+    width: 100px;
   }
 
 }

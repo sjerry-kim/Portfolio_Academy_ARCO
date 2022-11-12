@@ -3,7 +3,6 @@ import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
-import InputGroup from 'react-bootstrap/InputGroup';
 
 function SubmitAdoptionApp() {
   const [validated, setValidated] = useState(false);
@@ -20,7 +19,7 @@ function SubmitAdoptionApp() {
   };
 
   return (
-    <Form style={{display: "flex", flexDirection: "column", alignItems: "center"}} 
+    <Form className='adopt-app-form'
       noValidate validated={validated} onSubmit={handleSubmit}>
       <Row className="mb-3" style={{width: "200px"}}>
         <Form.Group as={Col}>
@@ -97,7 +96,7 @@ function SubmitAdoptionApp() {
           feedbackType="invalid"
         />
       </Form.Group>
-      <Button type="submit">Submit form</Button>
+      <button type="submit">Submit form</button>
     </Form>
   );
 }

@@ -12,9 +12,7 @@ const PublishingNewsletter = () => {
 
   useEffect(()=>{
     window.addEventListener("scroll",function(){
-      // 프로그래스 바가 있다면 실행할 수 있도록
       if(document.querySelector(".article-main") != null){ // 비어있는 게 아니라면
-          // 세팅함수 실행
           showButton();
         }
       })
@@ -27,10 +25,8 @@ const PublishingNewsletter = () => {
           // 전체 높이
           let totalY = document.documentElement.scrollHeight-document.documentElement.clientHeight;
           
-    
           // 퍼센트로 바꿔서 progress css의width값에 넣어주기
           let percentage = (curreY/totalY)*100;
-          
           if (percentage>=55){
             document.querySelector(".top-botton").style.display = "flex"
           }else{

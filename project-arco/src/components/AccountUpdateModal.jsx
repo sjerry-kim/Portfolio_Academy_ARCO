@@ -26,7 +26,7 @@ function AccountUpdateModal() {
   return (
     <div className='account-modal'>
       <Button className='account-btn' variant="primary" onClick={handleShow}>
-        Launch demo modal
+        Change Payment Information
       </Button>
 
       <Modal show={show} onHide={handleClose}>
