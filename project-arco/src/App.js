@@ -27,7 +27,7 @@ function App() {
     <div className="App">
       <DataProvider>
         <Routes>
-          <Route path='/' element={<Layout />}>
+          <Route path='/desa' element={<Layout />}>
             <Route index element={<Home />}/>
             <Route path='/about' element={<About />}/>
             <Route path='/donation' element={<Donation />}/>
