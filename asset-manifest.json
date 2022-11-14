@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/-Project-Academy_ARCO/static/css/main.abc23147.css",
-    "main.js": "/-Project-Academy_ARCO/static/js/main.db8b523b.js",
+    "main.js": "/-Project-Academy_ARCO/static/js/main.9a421ab7.js",
     "static/js/787.8f8df46c.chunk.js": "/-Project-Academy_ARCO/static/js/787.8f8df46c.chunk.js",
     "static/media/donation_volunteer.jpg": "/-Project-Academy_ARCO/static/media/donation_volunteer.d90dc6e576c952a5bab0.jpg",
     "static/media/safecenter_img_nukki.png": "/-Project-Academy_ARCO/static/media/safecenter_img_nukki.e226bfc09e6affcc8133.png",
@@ -47,11 +47,11 @@
     "static/media/slick.woff": "/-Project-Academy_ARCO/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/-Project-Academy_ARCO/index.html",
     "main.abc23147.css.map": "/-Project-Academy_ARCO/static/css/main.abc23147.css.map",
-    "main.db8b523b.js.map": "/-Project-Academy_ARCO/static/js/main.db8b523b.js.map",
+    "main.9a421ab7.js.map": "/-Project-Academy_ARCO/static/js/main.9a421ab7.js.map",
     "787.8f8df46c.chunk.js.map": "/-Project-Academy_ARCO/static/js/787.8f8df46c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.abc23147.css",
-    "static/js/main.db8b523b.js"
+    "static/js/main.9a421ab7.js"
   ]
 }
