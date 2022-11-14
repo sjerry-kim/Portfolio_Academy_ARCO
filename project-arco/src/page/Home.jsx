@@ -1,9 +1,5 @@
 import { useEffect, useState } from "react";
-import { NavLink, useNavigate } from "react-router-dom";
-import About from "./About";
-import Donation from "./Donation";
-import Login from "./Login";
-import SafeCenter from "./SafeCenter";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDove } from "@fortawesome/free-solid-svg-icons";
 import Lastest from "../components/Lastest";
@@ -75,10 +71,10 @@ const Home = () => {
           <h1><span>O</span> r g a n i z a t i o n</h1>
         </div>
         <div className="box-link">
-          <a href="/about/publishing_newsletter">
+          <Link to="/about/publishing_newsletter">
             <FontAwesomeIcon icon={faDove} style={{paddingRight:"7px"}}/>
             Click & Check the November News!
-          </a>
+          </Link>
         </div>
       </div>
       <div className="side-header" >
@@ -88,13 +84,13 @@ const Home = () => {
           </NavLink>
         </div>
         <nav className="side-nav">
-          <NavLink to='/about' element={<About />} onClick="window.scrollTo(0,0);">
+          <NavLink to='/about' onClick="window.scrollTo(0,0);">
             About Us
           </NavLink>
-          <NavLink to='/donation' element={<Donation />} onClick="window.scrollTo(0,0);">
+          <NavLink to='/donation' onClick="window.scrollTo(0,0);">
             Donation
           </NavLink>
-          <NavLink to='/safecenter' element={<SafeCenter />} onClick="window.scrollTo(0,0);">
+          <NavLink to='/safecenter' onClick="window.scrollTo(0,0);">
             Safe Center
           </NavLink>
         </nav>

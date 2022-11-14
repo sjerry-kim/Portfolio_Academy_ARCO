@@ -3,6 +3,7 @@ import Footer from "../components/Footer";
 import SubmitVolunteerwork from "../components/SubmitVolunteerwork";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHouseMedical } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 const SafeCenter = () => {
 
@@ -26,7 +27,7 @@ const SafeCenter = () => {
         <h1>Safe Center</h1>
           <div className="round-box">
             <div className="round-div"></div>
-            <a href="/safecenter"><FontAwesomeIcon icon={faHouseMedical} /></a>
+            <Link to="/safecenter"><FontAwesomeIcon icon={faHouseMedical} /></Link>
           </div>
         </div>
         <h2>Abused animals stay in the center after being rescued.</h2>
