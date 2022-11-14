@@ -42,9 +42,15 @@ const Navbar = () => {
         </Link>
       </div>
       <nav className="glb-nav">
-        <NavLink to='/about' element={<About />} onClick="window.scrollTo(0,0);">About Us</NavLink>
-        <NavLink to='/donation' element={<Donation />} onClick="window.scrollTo(0,0);">Donation</NavLink>
-        <NavLink to='/safecenter' element={<SafeCenter />} onClick="window.scrollTo(0,0);">Safe Center</NavLink>
+        <Link to='/about' onClick={()=>{
+          //navigate('/about')
+          window.scrollTo(0,0);}}>About Us</Link>
+        <Link to='/donation' onClick={()=>{
+          //navigate('/donation')
+          window.scrollTo(0,0);}}>Donation</Link>
+        <Link to='/safecenter' onClick={()=>{
+          //navigate('/safecenter')
+          window.scrollTo(0,0);}}>Safe Center</Link>
       </nav>
       <div className="glb-login">
           {
