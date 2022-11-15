@@ -1140,10 +1140,27 @@
 /*Login*/
 .login-background{
   width: 100%;
-  height: 100%;
+  height: 500px;
   background-color: #ffffff;
   display: flex;
   justify-content: center;
+  position: absolute;
+  top: 0;
+}
+
+.login-background form{
+  width: 300px;
+  margin-top: 300px;
+}
+
+.login-background .form-label{
+  color: #000051;
+}
+
+.login-background .btn{
+  width: 100px;
+  background-color: #000051;
+  border: none;
 }
 
 /*Mypage : myprofile*/
@@ -1158,28 +1175,29 @@
 .mypage-background .mypage-title{
   font-style: italic;
   font-weight: bold;
-  font-size: 7em;
+  font-size: 3em;
   color: rgba(73, 113, 116,0.6);
   position: fixed;
   top: 3px;
   left: 60px;
 }
 
-.mypage-background .mypage-home-a{
-  height: 10px;
-  width: 100px;
-  margin: 0;
-  text-decoration: none;
-  color: #112B3C;
-  background-color: transparent;
-  position: fixed;
-  top: 10px;
-  right: 10px;
+.mypage-home-logout{
+  width: 20%;
+  margin-right: 0;
   z-index: 999;
+  position: fixed;
+  top: 4%;
+  right: 0.08%;
 }
 
-.mypage-background .mypage-home-a:hover{
-  color: #EB6440;
+.mypage-home-logout button{
+  border: none;
+  background-color: transparent;
+  color: #2C3D4F;
+  font-weight: 700px;
+  font-size: 0.8em;
+  margin-right: 10px;
 }
 
 .mypage-section{

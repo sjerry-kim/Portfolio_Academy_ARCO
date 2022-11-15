@@ -38,17 +38,16 @@ const Login = () => {
   return (
     <body>
       <div className="login-background">
-        <Form style={{width:"300px", paddingTop: "19%"}} onSubmit={loginUser}>
+        <Form onSubmit={loginUser}>
           <Form.Group className="mb-2" controlId="formBasicEmail">
-            <Form.Label style={{color:"#000051"}}>ID</Form.Label>
+            <Form.Label>ID</Form.Label>
             <Form.Control type="text" placeholder="Enter ID" onChange={(e)=>{setId(e.target.value)}} required/>
           </Form.Group>
           <Form.Group className="mb-2" controlId="formBasicPassword">
-            <Form.Label style={{color:"#000051"}}>Password</Form.Label>
+            <Form.Label>Password</Form.Label>
             <Form.Control type="password" placeholder="Password" onChange={(e)=>{setPw(e.target.value)}} required/>
           </Form.Group>
-          <Button className='m-3' type="submit"
-                  style={{width:"100px",backgroundColor:"#000051", border:"none"}}>
+          <Button className='m-3' type="submit">
             Sign In
           </Button>
         </Form>
