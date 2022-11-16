@@ -32,7 +32,7 @@ const Login = () => {
           amount: 10000},
       ]
     });
-    navigate('/mypage');
+    navigate('/mypage/myprofile');
   }
 
   return (

@@ -11,7 +11,7 @@ const MyProfile = () => {
   },[data.state.user])
 
   return ( 
-    <div>
+    <div className="my-profile">
       <div className="profile-greet">
         <h1>Welcome {data.state.user.userId}!</h1>
         <h2>Thank you for being with us.</h2>

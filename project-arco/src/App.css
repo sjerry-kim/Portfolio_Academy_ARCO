@@ -169,18 +169,17 @@
 }
 
 .box-link a {
+  position: relative;
+  top: 10px;
   font-size: 1.1em;
   color: #ffffff;
   text-decoration: none;
-  font-weight: 100px;
-  animation: changeSize 2s;
-  animation-iteration-count: infinite;
+  animation: bounce 0.5s ease infinite alternate;;
 }
 
-@keyframes changeSize {
-  0%{font-size: 1.1em;}
-  50%{font-size: 1.17em;}
-  100%{font-size: 1.1em;}
+@keyframes bounce {
+  100%{ top: -10px;
+        text-shadow: 0 0 3px lemonchiffon;}
 }
 
 .box-link a:hover{
@@ -1173,22 +1172,22 @@
 }
 
 .mypage-background .mypage-title{
-  font-style: italic;
   font-weight: bold;
   font-size: 3em;
-  color: rgba(73, 113, 116,0.6);
+  color: rgba(73, 113, 116, 1);
   position: fixed;
-  top: 3px;
-  left: 60px;
+  top: 4.5%;
+  left: 3.5%;
+  cursor: pointer;
 }
 
 .mypage-home-logout{
-  width: 20%;
+  width: 15%;
   margin-right: 0;
   z-index: 999;
   position: fixed;
-  top: 4%;
-  right: 0.08%;
+  top: 38px;
+  right: 13px;
 }
 
 .mypage-home-logout button{
@@ -1198,6 +1197,7 @@
   font-weight: 700px;
   font-size: 0.8em;
   margin-right: 10px;
+  margin-bottom: 4px;
 }
 
 .mypage-section{
@@ -1218,7 +1218,7 @@
   flex-direction: column;
   width: 20%;
   height: auto;
-  margin-top: 145px ;
+  margin-top: 155px ;
   background-color: transparent;
 }
 
@@ -1235,6 +1235,12 @@
   background-color: rgba(255, 255, 255, 0.4);
   border-radius: 10px;
   color:#112B3C ;
+}
+
+.my-profile{
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
 }
 
 .profile-greet{
@@ -1419,11 +1425,11 @@
   width: 30px;
   height: 30px;
   text-align: center;
-  padding: 2px 2px;
+  padding: 2px;
   margin: 20px 8px 20px 0px;
   border-radius: 50%;
   color: white;
-  background-color: #D6E4E5;
+  background-color: #497174;
 }
 
 .counselor-p{
@@ -1977,6 +1983,13 @@
 }
 
 @media screen and (max-width: 687px){
+  .mypage-home-logout{
+    font-size: 1em;
+    width: 20%;
+    top: 30px;
+    right: 20px;
+  }
+
   .profile-section{
     flex-direction: column;
   }
@@ -2077,8 +2090,25 @@
   }
 
   .glb-login button{
-    font-size: 0.5em;
+    font-size: 0.7em;
     margin-right: 0px;
+  }
+
+  .mypage-home-logout{
+    font-size: 0.9em;
+    right: 10px;
+    text-align: end;
+  }
+
+  .mypage-nav a{
+    font-size: 1em;
+  }
+
+  .mypage-background .mypage-title{
+    font-size: 2.5em;
+    position: fixed;
+    top: 5%;
+    left: 5%;
   }
 
   .home-body{

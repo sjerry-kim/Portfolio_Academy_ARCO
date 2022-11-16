@@ -37,7 +37,7 @@ function App() {
           <Route path='/about/publishing_newsletter'element={<PublishingNewsletter />}/>
           <Route path='/about/matching_family' element={<MatchingFamily />}/>
           <Route path='/mypage' element={<MyPage />}>
-            <Route index element={<MyProfile />} />
+            <Route index path='/mypage/myprofile' element={<MyProfile />} />
             <Route path='/mypage/mydonation' element={<MyDonation />} />
             <Route path='/mypage/questions' element={<Questions />} />
           </Route>

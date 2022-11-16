@@ -20,7 +20,7 @@ const Navbar = () => {
 
   const checkLogin = () =>{
     data.state.user? (
-      navigate('/mypage')
+      navigate('/mypage/myprofile')
     ):(
       navigate('/login')
     )
@@ -37,7 +37,7 @@ const Navbar = () => {
     <div className="glb-header" >
       <div className="glb-title">
         <Link to='/' onClick="window.scrollTo(0,0);">
-          <FontAwesomeIcon icon={faShieldDog}/>
+          <FontAwesomeIcon icon={faShieldDog}/>{" "}
           ARCO
         </Link>
       </div>
@@ -50,7 +50,7 @@ const Navbar = () => {
           {
             login? (
               <div>
-                <button onClick={()=>{navigate('/mypage')}}>
+                <button onClick={()=>{navigate('/mypage/myprofile')}}>
                   My Page
                 </button>
                 <button

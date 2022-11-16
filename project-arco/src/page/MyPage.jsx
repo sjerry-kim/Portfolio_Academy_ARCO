@@ -23,8 +23,13 @@ const MyPage = () => {
     navigate('/login'); // 🤬🤬🤬
   }
 
-
   //<FontAwesomeIcon icon={faShieldDog}/>
+
+  const activeStyle = {
+    background : "rgba(255, 255, 255, 0.4)",
+    borderRadius : "10px",
+    color: "#2C3D4F"
+  }
 
   return (
     
@@ -39,11 +44,14 @@ const MyPage = () => {
             Sign Out
           </button>
         </div>
-        <h1 className="mypage-title">My Page</h1>
+        <h1 className="mypage-title" onClick={()=>{navigate('/mypage/myprofile')}}>
+          <FontAwesomeIcon icon={faShieldDog}/> {" "}
+          My Page
+          </h1>
         <nav className="mypage-nav">
-          <NavLink index to='/mypage' element={<MyProfile />}>My profile</NavLink>
-          <NavLink to='/mypage/mydonation' element={<MyDonation />}>My Donation</NavLink>
-          <NavLink to='/mypage/questions' element={<Questions />}>Questions</NavLink>
+          <NavLink index to='/mypage/myprofile' style={({isActive})=>isActive? activeStyle : undefined}>My profile</NavLink>
+          <NavLink to='/mypage/mydonation' style={({isActive})=>isActive? activeStyle : undefined} >My Donation</NavLink>
+          <NavLink to='/mypage/questions' style={({isActive})=>isActive? activeStyle : undefined} >Questions</NavLink>
         </nav>
         <section className="mypage-section">
           <Outlet />

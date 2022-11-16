@@ -10,7 +10,7 @@ const Questions = () => {
       <div className="question-area">
         <div className="qna-box">
           <div className="counselor-box">
-            <div className="counselor-profile">C</div>
+            <div className="counselor-profile">A</div>
             <div className="counselor-p">
               <p>Please wait 2-3 days for the answers :)</p>
             </div>

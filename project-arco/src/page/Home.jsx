@@ -48,7 +48,7 @@ const Home = () => {
 
   const checkLogin = () =>{
     data.state.user? (
-      navigate('/mypage')
+      navigate('/mypage/myprofile')
     ):(
       navigate('/login')
     )
@@ -98,7 +98,7 @@ const Home = () => {
           {
             login? (
               <div>
-                <button onClick={()=>{navigate('/mypage')}}>
+                <button onClick={()=>{navigate('/mypage/myprofile')}}>
                   My Page
                 </button>
                 <button onClick={checkLogout}>
