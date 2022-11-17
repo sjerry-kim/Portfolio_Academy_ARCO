@@ -16,7 +16,7 @@ const LookFamily = () => {
 
   return (
     <div className='lookfamily-box'>
-      <h1>We looking for new Family</h1>
+      <h1>We looking for new family</h1>
       <CardGroup>
         {
           state.animal.filter((exAnimal) => (exAnimal.expose === "yes")).map((animal, index)=>(

@@ -37,12 +37,12 @@ const About = () => {
     <body>
       <div className="about-background">
         <h1 className="first-sentence">
-          The earth is not a planet that <br /> 
+          The earth is not a planet that
           exists only for humans.
         </h1>
         <div className="second-sentence-box">
           <h1 className="second-sentence">
-            Arco will take the lead in making a better world <br />
+            Arco will take the lead in making a better world
             that coexists with animals.
           </h1>
         </div>

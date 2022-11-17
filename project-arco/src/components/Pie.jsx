@@ -25,7 +25,7 @@ const Pie = () => {
         ]}
 
         /* chart margin */
-        margin={{ top: 25, right: 150, bottom: 60, left: 150 }}
+        margin={{ top: 0, right: 100, bottom: 80, left: 100 }}
 
         /* chart 중간 빈공간 반지름 */
         innerRadius={0.5}
@@ -45,19 +45,19 @@ const Pie = () => {
         borderWidth={2}
 
         /* link label skip할 기준 각도 */
-        arcLinkLabelsSkipAngle={0}
+        arcLinkLabelsSkipAngle={360}
 
         /* link label 색상 */
         arcLinkLabelsTextColor="#EFEFEF"
               
         /* link label 연결되는 선 두께 */
-        arcLinkLabelsThickness={1.8}
+        arcLinkLabelsThickness={0}
 
         /* link label 연결되는 선 색상 */
         arcLinkLabelsColor={{ from: 'color' }} // pad 색상에 따라감
 
         /* label (pad에 표현되는 글씨) skip할 기준 각도 */
-        arcLabelsSkipAngle={10}
+        arcLabelsSkipAngle={0}
 
         theme={{
                 /* label style (pad에 표현되는 글씨) */
@@ -83,15 +83,15 @@ const Pie = () => {
         legends={[
             {
               anchor: 'bottom', // 위치
-              direction: 'column', // item 그려지는 방향
+              direction: 'row', // item 그려지는 방향
               justify: false, // 글씨, 색상간 간격 justify 적용 여부
-              translateX: 120, // chart와 X 간격
+              translateX: 0, // chart와 X 간격
               translateY: 70, // chart와 Y 간격
-              itemsSpacing: 5, // item간 간격
-              itemWidth: 70, // item width
+              itemsSpacing: 15, // item간 간격
+              itemWidth: 95, // item width
               itemHeight: 18, // item height
               itemDirection: 'left-to-right', // item 내부에 그려지는 방향
-              itemOpacity: 0, // item opacity
+              itemOpacity: 1, // item opacity
               symbolSize: 18, // symbol (색상 표기) 크기
               symbolShape: 'circle', // symbol (색상 표기) 모양
               effects: [

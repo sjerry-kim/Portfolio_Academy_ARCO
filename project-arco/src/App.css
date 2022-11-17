@@ -310,8 +310,7 @@
   display:flex;
   background-color:#D6E4E5;
   position: relative;
-  bottom: 60px;
-  left: 30px;
+  bottom: 100px;
   border-radius: 50%;
 }
 
@@ -410,7 +409,6 @@
 
 .quiz-radio-box .form-check:hover{
   color: #E14D2A;
-  font-size: 1.6em;
 }
 
 .quiz-box button{
@@ -529,9 +527,11 @@
 }
 
 .first-sentence{
+  width: 100%;
+  padding: 0 35px;
   font-size: 3em;
-  margin-top: 250px;
-  margin-bottom: 800px;
+  margin-top: 300px;
+  margin-bottom: 750px;
   opacity: 0;
   transition: opacity 0.5s; 
   transition-delay: 0.1s;
@@ -544,6 +544,8 @@
 }
 
 .second-sentence{
+  width: 100%;
+  padding: 0 50px;
   color: white;
   font-size: 2.8em;
   transition: opacity 0.7s; 
@@ -1490,10 +1492,6 @@
   .pie-text h2{
     font-size: 1.8em;
   }
-
-  .pie-div{
-    width: 50%;
-  }
 }
 
 @media screen and (max-width: 1399px){
@@ -1543,10 +1541,6 @@
   .matching-cards .card-body{
     padding: 5px;
   }
-
-  .pie-div{
-    width: 50%;
-  }
 }
 
 @media screen and (max-width: 1199px){
@@ -1572,7 +1566,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 70px 0 0 0;
+    margin: 0px
   }
 
   .pie-text h1{
@@ -1584,11 +1578,12 @@
   }
 
   .pie-div{
-    width: 600px;
+    width: 100%;
+    height: 450px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    margin: auto;
+    margin-top: 30px;
   }
 
   .submit-dona-box{
@@ -1728,7 +1723,7 @@
 
   .pie-box{
     margin-top: 60px;
-    height: 500px;
+    height: 700px;
   }
 
   .pie-text h1{
@@ -1740,7 +1735,7 @@
   }
 
   .pie-div{
-    margin-top: 50px;
+    height: 400px;
   }
 
   .submit-dona-box{
@@ -1789,7 +1784,7 @@
   }
 
   .pie-box{
-    height: 500px;
+    height: 700px;
   }
 
   .pie-text h1{
@@ -1801,8 +1796,7 @@
   }
 
   .pie-div{
-    width: 500px;
-    height: 300px;
+    height: 400px;
   }
 
   .my-dona-keep h1{
@@ -2015,6 +2009,26 @@
     margin-left: 30px;
   }
 
+  .lastest-box .discover-box{
+    width:100px;
+    height:100px;
+    bottom: 80px;
+  }
+  
+  .lastest-box .discover-box a{
+    font-size:  1.1em;
+  }
+  
+  @keyframes big{
+    from{width: 100px; height: 100px;}
+    to{width: 120px; height: 120px;}
+  }
+  
+  @keyframes small{
+    from{width: 120px; height: 120px;}
+    to{width: 100px; height: 100px;}
+  }
+
   .footer{
     padding: 20px;
     flex-direction: column;
@@ -2032,8 +2046,7 @@
   }
 
   .pie-box{
-    margin-top: 70px;
-    height: 450px;
+    height: 600px;
   }
 
   .pie-text h1{
@@ -2045,7 +2058,7 @@
   }
 
   .pie-div{
-    width: 450px;
+    height: 380px;
   }
 
   .submit-dona-box{
@@ -2122,6 +2135,12 @@
     position: absolute; top: 0; left: 0;
   }
 
+  .lookfamily-box h1{
+    width: 250px;
+    margin: auto;
+    font-size: 2.5em;
+  }
+
   .lookfamily-box .card-group{
     height: 80%;
     margin-bottom: 5%;
@@ -2132,11 +2151,11 @@
   }
 
   .first-sentence{
-    font-size: 2em;
+    font-size: 1.8em;
   }
 
   .second-sentence{
-    font-size: 1.5em;
+    font-size: 1.7em;
   }
 
   .article-header h1{
@@ -2185,9 +2204,18 @@
     width: 100px;
   }
 
+  .pie-div{
+    width: 100%;
+  }
+
 }
 
 @media screen and (max-width: 390px){
+
+  .home-body{
+    height: 4300px;
+  }
+
   .glb-title{
     width: 90px;
     margin-left: 20px;
@@ -2212,6 +2240,87 @@
     width: 20%;
   }
 
+  .home-main{
+    height: 4300px;
+  }
+
+  .lastest-box{
+    margin-top: 50px;
+    margin-bottom: 150px ;
+  }
+
+  .lastest-box h2{
+    font-size: 2em;
+  }
+
+  .donation-box{
+    padding: 50px;
+  }
+
+  .donation-box h1{
+    font-size: 1.8em;
+  }
+  
+  .donation-box a{
+    font-size: 2.5em;
+  }
+  
+  .donation-box a:hover{
+    color: #FFF6BF;
+    font-size: 2.6em;
+  }
+
+  .quiz-box h1{
+    font-size: 1.5em;
+  }
+
+  .quiz-box h3{
+    font-size: 1.6em;
+  }
+
+  .quiz-radio-box .form-check{
+    width: 50px;
+    margin-right: 35px;
+    font-size: 1em;
+  }
+
+  .quiz-box button{
+    width: 100px;
+    height: 50px;
+    margin:auto;
+    font-size: 1.3em;
+    border-radius: 10px;
+  }
+
+  .lookfamily-box button{
+    padding: 15px 30px;
+    font-size: 1.2em;
+  }
+
+  .act-box h1{
+    font-size: 3em;
+  }
+
+  .act-box .container{
+    width: 280px;
+  }
+
+  .act-box .slick-slider h2{
+    font-size: 1.6em;
+    width: 5%;
+    margin-left: 15px;
+  }
+
+  .slider-div{
+    width: 250px;
+    height: 350px;
+  }
+  
+  .act-box .slick-slider img{
+    width: 250px;
+    height: 350px;
+  }
+  
   .matching-header .bottom{
     height: 200px;
   }
@@ -2233,23 +2342,8 @@
     font-size: 1.8em;
   }
 
-  .act-box .container{
-    width: 280px;
+  .pie-div{
+    width: 100%;
   }
 
-  .act-box .slick-slider h2{
-    font-size: 1.6em;
-    width: 5%;
-    margin-left: 50px;
-  }
-
-  .slider-div{
-    width: 250px;
-    height: 350px;
-  }
-  
-  .act-box .slick-slider img{
-    width: 250px;
-    height: 350px;
-  }
 }

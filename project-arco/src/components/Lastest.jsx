@@ -45,7 +45,7 @@ const Lastest = () => {
                 }
               </Slider>
               <div className="discover-box">
-                <a style={{color:"#205375"}} onClick={moveNewsletter}>Divcover<br />more</a>
+                <a style={{color:"#205375"}} onClick={moveNewsletter}>Disvcover<br />more</a>
               </div>
             </Col>
           </Row>
