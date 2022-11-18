@@ -21,56 +21,44 @@ function SubmitVolunteerwork() {
 
   return (
     <Form className='vol-app-form' noValidate validated={validated} onSubmit={handleSubmit}>
-      <Row className="mb-3" style={{width: "200px"}}>
+      <Row className="mb-3" >
         <Form.Group as={Col} controlId="validationCustom01">
           <Form.Label>First name</Form.Label>
-          <Form.Control
-            required
-            type="text"
-            placeholder="First name"
-          />
+          <Form.Control className='first-name-input' required type="text" placeholder="First name" />
           <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
         </Form.Group>
         </Row>
 
-        <Row className="mb-3" style={{width: "200px"}}>
+        <Row className="mb-3" >
         <Form.Group as={Col} controlId="validationCustom02">
           <Form.Label>Last name</Form.Label>
-          <Form.Control
-            required
-            type="text"
-            placeholder="Last name"
-          />
+          <Form.Control className='last-name-input' required type="text" placeholder="Last name" />
           <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
         </Form.Group>
         </Row>
 
-        <Row className="mb-3" style={{width: "200px"}}>
+        <Row className="mb-3">
         <Form.Group as={Col} controlId="validationCustom02">
           <Form.Label>Birth date</Form.Label>
-          <Form.Control
-            required
-            type="date"
-            placeholder="Last name"
-          />
+          <Form.Control className='birth-input' required type="date" placeholder="Last name" />
           <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
         </Form.Group>
         </Row>
 
-        <Row className="mb-3" style={{width: "300px"}} >
+        <Row className="mb-3" >
           <Form.Group as={Col} controlId="validationCustom03">
               <Form.Label>Email</Form.Label>
-              <Form.Control type="email" placeholder="name@example.com" required/>
+              <Form.Control className='email-input' type="email" placeholder="name@example.com" required/>
               <Form.Control.Feedback type="invalid">
                 Please provide a valid email.
               </Form.Control.Feedback>
             </Form.Group>
         </Row>
 
-        <Row className="mb-3" style={{width: "300px"}}>
+        <Row className="mb-3" >
           <Form.Group as={Col} controlId="validationCustom04">
               <Form.Label>Phone number</Form.Label>
-              <Form.Control type="tel" placeholder="000-0000-0000" required />
+              <Form.Control className='phone-input' type="tel" placeholder="000-0000-0000" required />
               <Form.Control.Feedback type="invalid">
                 Please provide a valid phone number.
               </Form.Control.Feedback>
@@ -78,34 +66,34 @@ function SubmitVolunteerwork() {
         </Row>
 
         {/* 여기서부터!!!!!!! */}
-        <Row className="m-3" style={{width: "480px"}}>
+        <Row className="m-3" >
           <Form.Group as={Col} controlId="validationCustom05">
               <Form.Label>Check the day (Duplicate selection available)</Form.Label>
               <InputGroup className='input-day' style={{diplay:"flex", flexDirection: "row", justifyContent: "center"}}>
-                <Form.Check style={{width:"80px", display:"inline-block", marginRight: "20px"}} id={`sunday`} label={`Sunday`}/>
-                <Form.Check style={{width:"80px", display:"inline-block", marginRight: "20px"}} id={`monday`} label={`Monday`}/>
-                <Form.Check style={{width:"80px", display:"inline-block", marginRight: "20px"}} id={`tuesday`} label={`Tuesday`}/>
-                <Form.Check style={{width:"80px", display:"inline-block", marginRight: "20px"}} id={`wednesday`} label={`Wednesday`}/>
-                <Form.Check style={{width:"80px", display:"inline-block", marginRight: "20px"}} id={`thursday`} label={`Thursday`}/>
-                <Form.Check style={{width:"80px", display:"inline-block", marginRight: "20px"}} id={`friday`} label={`Friday`}/>
-                <Form.Check style={{width:"80px", display:"inline-block", marginRight: "20px"}} id={`saturday`} label={`Saturday`}/>
+                <Form.Check id={`sunday`} label={`Sunday`}/>
+                <Form.Check id={`monday`} label={`Monday`}/>
+                <Form.Check id={`tuesday`} label={`Tuesday`}/>
+                <Form.Check id={`wednesday`} label={`Wednesday`}/>
+                <Form.Check id={`thursday`} label={`Thursday`}/>
+                <Form.Check id={`friday`} label={`Friday`}/>
+                <Form.Check id={`saturday`} label={`Saturday`}/>
               </InputGroup>
             </Form.Group>
         </Row>
 
-        <Row className="m-3 mb-4" style={{width: "330px"}}>
+        <Row className="m-3 mb-4" >
           <Form.Group as={Col} controlId="validationCustom05">
               <Form.Label>Check the day (Duplicate selection available)</Form.Label>
-              <InputGroup className='input-time' style={{diplay:"flex", flexDirection: "row", justifyContent: "center"}}>
-                <Form.Check style={{width:"80px", display:"inline-block", marginRight: "80px"}} id={`Morning`} label={`Morning `}/>
-                <Form.Check style={{width:"80px", display:"inline-block", marginRight: "0px"}} id={`Afternoon`} label={`Afternoon`}/>
+              <InputGroup className='input-time'>
+                <Form.Check id={`morning`} label={`Morning `}/>
+                <Form.Check id={`afternoon`} label={`Afternoon`}/>
               </InputGroup>
             </Form.Group>
         </Row>
 
 
       <Form.Group className="mb-3">
-        <Form.Check
+        <Form.Check className='agree-check'
           required
           label="Agree to terms and conditions"
           feedback="You must agree before submitting."

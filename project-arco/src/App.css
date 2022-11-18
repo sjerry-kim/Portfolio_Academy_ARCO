@@ -1009,7 +1009,6 @@
 
 .safecenter-title{
   text-align: start;
-
 }
 
 .safecenter-background h1{
@@ -1112,16 +1111,50 @@
   align-items: center;
 }
 
+.vol-app-form .row{
+  width: 400px;
+}
+
+.vol-app-form .first-name-input,
+.vol-app-form .last-name-input,
+.vol-app-form .birth-input{
+  width: 50%;
+  margin: auto;
+}
+
+.vol-app-form .email-input,
+.vol-app-form .phone-input{
+  width: 70%;
+  margin: auto;
+}
+
 .vol-app-form .input-day{
   background-color: rgba(255, 255, 255, 0.25);
   border-radius: 10px;
   padding: 8px;
+  margin: auto;
+}
+
+.vol-app-form .input-day .form-check{
+  width: 80px;
+  display: inline-block;
+  margin-right: 30px;
 }
 
 .vol-app-form .input-time{
   background-color: rgba(255, 255, 255, 0.25);
   border-radius: 10px;
   padding: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: auto;
+}
+
+.vol-app-form .input-time .form-check{
+  width: 80px;
+  display: inline-block;
+  margin-right: 30px;
 }
 
 .vol-app-form .vol-app-btn{
@@ -1589,6 +1622,10 @@
   .submit-dona-box{
     margin: auto;
   }
+  
+  .submit-dona-box h1{
+    font-size: 2.5em;
+  }
 
   .safecenter-background h1{
     width: 450px;
@@ -1736,6 +1773,10 @@
 
   .pie-div{
     height: 400px;
+  }
+
+  .submit-dona-box h1{
+    font-size: 2em;
   }
 
   .submit-dona-box{
@@ -2208,6 +2249,24 @@
     width: 100%;
   }
 
+  .vol-app-form .input-day{
+    width: 70%;
+  }
+
+  .vol-app-form .input-day .form-check{
+    width: 120px;
+    margin: 0;
+    text-align: center;
+  }
+
+  .vol-app-form .input-day .form-check:first-child{
+    margin-left: 0;
+  }    
+
+  .vol-app-form .input-time{
+    width: 70%;
+  }
+
 }
 
 @media screen and (max-width: 390px){
@@ -2345,5 +2404,107 @@
   .pie-div{
     width: 100%;
   }
+
+  .safecenter-background h1{
+    font-size: 3em;
+    width: 90%;
+    margin-left: 25px;
+  }
+
+  .safecenter-background h2{
+    width: 80%;
+    margin-left: 25px;
+    font-size: 1.5em;
+  }
+
+  .safecenter-p{
+    width: 90%;
+    margin-left: 25px;
+  }
+
+  .safecenter-p p{
+    font-size: 0.8em;
+  }
+
+  .submit-vol-box{
+    width: 80%;
+    height: 1250px;
+    margin-top: 280px;
+  }
+
+  .submit-vol-box h1{
+    width: 100%;
+    margin-left: 0;
+    font-size: 2em;
+  }
+
+  .vol-app-form .row{
+    width: 270px;
+  }
+
+  .vol-app-form .first-name-input, 
+  .vol-app-form .last-name-input, 
+  .vol-app-form .birth-input{
+    width: 55%;
+    margin: auto;
+  }
+
+  .vol-app-form .email-input,
+  .vol-app-form .phone-input{
+    width: 70%;
+    margin: auto;
+  }
+
+  .vol-app-form .form-label{
+    width: 200px;
+  }
+
+  .vol-app-form .input-day{
+    width: 60%;
+    margin: auto;
+  }
+
+  .vol-app-form .input-day .form-check{
+    width: 120px;
+    margin: 0;
+    text-align: center;
+  }
+
+  .vol-app-form .input-time{
+    width: 60%;
+  }
+
+  .vol-app-form .agree-check{
+    width: 90%;
+  }
+
+
+
+
+
+
+  /*
+
+  .submit-vol-box{
+    width: 275px;
+  }
+
+  .submit-vol-box h1{
+    width: 70%;
+    font-size: 2em;
+    margin: auto;
+  }
+
+  .vol-app-form .input-day{
+    width: 50%;
+    margin: auto;
+  }
+
+  .vol-app-form .input-time{
+    width: 70%;
+    margin: auto;
+  }
+
+  */
 
 }
