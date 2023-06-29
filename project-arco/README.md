@@ -69,5 +69,17 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-
-ffffff
+├── Dockerfile
+├── Package.resolved
+├── Package.swift
+├── Sources
+│ ├── App
+│ │ ├── Controllers
+│ │ ├── configure.swift
+│ │ └── routes.swift
+│ └── Run
+│ └── main.swift
+├── Tests
+│ └── AppTests
+│ └── AppTests.swift
+└── docker-compose.yml
